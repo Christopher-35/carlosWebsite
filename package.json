@@ -1,0 +1,42 @@
+{
+  "name": "carlos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "watch": "webpack-dev-server --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christopher-35/carlosWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Christopher-35/carlosWebsite/issues"
+  },
+  "homepage": "https://github.com/Christopher-35/carlosWebsite#readme",
+  "dependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
