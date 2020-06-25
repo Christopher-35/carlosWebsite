@@ -1,6 +1,11 @@
 const path = require('path');
 const htmlWpPlugin = require('html-webpack-plugin');
-module.exports = {
+const webpack = require('webpack');
+require('dotenv').config();
+module.exports = env => {
+    console.log('API', process.env.REACT_APP_GOOGLE_KEY);
+    return {
+    
     //entry point for app is index.js
     entry: path.resolve(__dirname, './public/index.js'),
     //allows routes to fall back to index.html code
@@ -19,7 +24,21 @@ module.exports = {
                 // include: './client/app.js',
                 // exclude: '/node_modules/',
                 use: 'babel-loader'
-            }
+            },
+
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+              },
+
+              {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                'file-loader',
+                ],
+              },
+
+             
         ]
     },
     //output filename
@@ -28,11 +47,24 @@ module.exports = {
         filename: 'bundle.js'
     },
 
+    //for webpack to read.env files
+    node: {
+        fs: "empty"
+     },
+
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env.REACT_APP_GOOGLE_KEY': JSON.stringify(process.env.REACT_APP_GOOGLE_KEY || 'development')
+        }),
+    ]
+
     // plugins: [
     //     new htmlWpPlugin({
     //       template: './public/index.html'
     //     })
     // ]
+
+}
 
 }
 //module/rules can be for supporting other file types
