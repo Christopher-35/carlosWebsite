@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './app.css'
-import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
+import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps';
 import { urlencoded } from 'body-parser';
+
 // import {REACT_APP_GOOGLE_KEY} from '../.env.local'
 
 // require('dotenv').config();
@@ -98,22 +99,27 @@ function Map() {
     
     return (
         <GoogleMap 
-        defaultZoom={10} 
-        defaultCenter={{lat: 45.421532, lng: -75.697189}}
-        />
+        defaultZoom={17} 
+        defaultCenter={{lat: 40.715610, lng: -74.005480}}  
+        >
+        {<Marker key={'305'} position={{lat: 40.715610, lng: -74.005480}}/>}
+        </GoogleMap>
+   
+        
     )
 }
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export default function App() {
-    return <div style={{width: '100vw', height: '100vh'}}> 
+    return <div style={{width: '80vw', height: '80vh'}}> 
         <WrappedMap
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
         loadingElement={<div style={{height: '100%'}}/>}
         containerElement={<div style={{height: '100%'}}/>}
         mapElement={<div style={{height: '100%'}}/>}
         />
-        
+         
          </div>
 }
+
