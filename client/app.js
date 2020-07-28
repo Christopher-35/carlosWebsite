@@ -74,7 +74,7 @@ class App extends Component {
           </Navbar> */}
 
             <Navbar id='nav_id' bg="light" expand="lg" fixed='top'>
-                <Navbar.Brand href="#home"><img className='carlos_home' src='carlos.jpg' /></Navbar.Brand>
+                <Navbar.Brand href="#home"><img className='carlos_home' src='brickLogo.png' /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto">
