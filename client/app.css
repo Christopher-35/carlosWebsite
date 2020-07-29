@@ -16,10 +16,18 @@ body {
   width: 100% !important;
 }
 
-.carlos_home {
-  /* width: 9vw;
-  height: 5vw; */
+.react-container {
+  /* position: relative; */
+  /* background: gray; */
 }
+
+#make_gray {
+  background: #DCDCDC !important;
+}
+
+/* .fixed-top {
+  background: gray !important;
+} */
 
 .mr-auto {
   width: 100% !important;
@@ -28,13 +36,9 @@ body {
   padding-left: 5%;
 }
 
-#nav_id {
-  background: #DCDCDC !important;
-}
-
 .navbar {
+  background: #DCDCDC !important;
   width: 100% !important;
-  height: 13%;
   z-index: 1 !important;
 }
 
@@ -263,6 +267,7 @@ body {
 
 
   body * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
   }
+  
   

@@ -72,15 +72,16 @@ class App extends Component {
               
             </Navbar.Collapse>
           </Navbar> */}
+        {/*id='nav_id'*/}
 
-            <Navbar id='nav_id' bg="light" expand="lg" fixed='top'>
-                <Navbar.Brand href="#home"><img className='carlos_home' src='brickLogo.png' /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="mr-auto">
-                  <Nav.Link className='home-link' href="#home">Home</Nav.Link>
-                  <Nav.Link className='consulting-link' href="#consulting">Consulting</Nav.Link>
-                  <NavDropdown title="Resources" id="basic-nav-dropdown">
+        <Navbar id='make_gray' bg="light" expand="lg" fixed='top'>
+            <Navbar.Brand href="#home"><img src='brickLogo.png'/></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                <Nav.Link className='home-link' href="#home">Home</Nav.Link>
+                <Nav.Link className='consulting-link' href="#consulting">Consulting</Nav.Link>
+                <NavDropdown title="Resources" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">For Entrepreneurs</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.2">Investor Tips/Training</NavDropdown.Item>
@@ -88,10 +89,10 @@ class App extends Component {
                     <NavDropdown.Item href="#action/3.3">Blog</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">Case Studies</NavDropdown.Item>
-                  </NavDropdown>
-                  <Nav.Link className='clientPortfolio-link' href="#clientPortfolio">Client Portfolio</Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
+                </NavDropdown>
+                <Nav.Link className='clientPortfolio-link' href="#clientPortfolio">Client Portfolio</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
             </Navbar>
 
             <div className='about-me'>
@@ -111,15 +112,15 @@ class App extends Component {
 
             <div className='home-clients'>
               <h1 className='home-client-title'>Featured Clients</h1>
-              <img src='zipLogo.png' className='zip-container'/>
+              {/* <img src='zipLogo.png' className='zip-container'/> */}
               {/* <div className='zip-container' style={{background: 'zipLogo.png'}}></div> */}
-              <img src='jabord.png' className='ja-container'/>
-              <img src='jinglz.png' className='jin-container'/>
-              <img src='' className='semantic-container'/>
+              {/* <img src='jabord.png' className='ja-container'/> */}
+              {/* <img src='jinglz.png' className='jin-container'/> */}
+              {/* <img src='' className='semantic-container'/>
               <img src='' className='talkbox-container'/>
               <img src='' className='h1-container'/>
               <img src='' className='bms-container'/>
-              <img src='' className='equities-container'/>
+              <img src='' className='equities-container'/> */}
 
             </div>
 
