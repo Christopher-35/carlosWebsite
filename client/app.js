@@ -16,13 +16,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import mapComponent from './gMaps';
 class App extends Component {
-    
     constructor(props) {
         super(props);
-
+        this.english = 'In English';
+        this.spanish = 'En Español';
         this.state = {
-
+          currentLang: 'En Español'
         };
+        this.toggleLanguage = this.toggleLanguage.bind(this);
+    }
+
+    toggleLanguage () {
+      let newLang;
+      if (this.state.currentLang === this.spanish){
+        newLang = this.english;
+      } else {
+        newLang = this.spanish;
+      }
+
+      this.setState({
+        currentLang: newLang
+      })
     }
 
 
@@ -53,34 +67,24 @@ class App extends Component {
               </div>
               <img className='coolLogo' src='carlos.jpg' alt='logo'/>
             </header> */}
-            
-            {/* <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              
-            </Navbar.Collapse>
-          </Navbar> */}
-        {/*id='nav_id'*/}
 
-        <Navbar id='make_gray' bg="light" expand="lg" fixed='top'>
-            <Navbar.Brand href="#home"><img src='brickLogo.png'/></Navbar.Brand>
+        {/* <img src='brickLogo.png'/> */}
+        {/* CONSIDER WRAPPING EVERYTHING IN FLEX CONTAINER */}
+       <Navbar id='make_gray' bg="light" expand="lg" fixed='top'>
+          <Navbar.Brand href="#home"><button onClick={()=> this.toggleLanguage()}  className='lang_button'>{this.state.currentLang}</button></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link className='home-link' href="#home">Home</Nav.Link>
-                <Nav.Link className='consulting-link' href="#consulting">Consulting</Nav.Link>
+                <Nav.Link className='home-link' href="#home">About Our Firm</Nav.Link>
+                <NavDropdown title="Practice Areas" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">For Entrepreneurs</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.2">Investor Tips/Training</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.3">Blog</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">Case Studies</NavDropdown.Item>
+                </NavDropdown>
                 <NavDropdown title="Resources" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">For Entrepreneurs</NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -90,7 +94,7 @@ class App extends Component {
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">Case Studies</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link className='clientPortfolio-link' href="#clientPortfolio">Client Portfolio</Nav.Link>
+                <Nav.Link className='clientPortfolio-link' href="#clientPortfolio">Contact Info.</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>

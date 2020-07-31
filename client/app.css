@@ -21,6 +21,25 @@ body {
   /* background: gray; */
 }
 
+.lang_button {
+  /* background-color: hsl(24, 72%, 52%); */
+  background-color: hsl(24, 99%, 62%);
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  /* width: 138%;
+  height: 130%; */
+  width: 120%;
+  /* height: 20% !important; */
+  padding: .2rem 1rem;
+
+}
+
+.lang_button:hover {
+  border-bottom: #000000 0.120em solid;
+  cursor: pointer;
+}
+
 #make_gray {
   background: #DCDCDC !important;
 }
@@ -34,12 +53,14 @@ body {
   display: flex !important;
   text-align: center !important;
   padding-left: 5%;
+  
 }
 
 .navbar {
   background: #DCDCDC !important;
   width: 100% !important;
   z-index: 1 !important;
+  padding: 1rem 1rem !important;
 }
 
 .home-link {
@@ -49,7 +70,7 @@ body {
 }
 
 .home-link:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .consulting-link {
@@ -83,7 +104,7 @@ body {
 }
 
 .clientPortfolio-link:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 } 
 
 
@@ -267,7 +288,7 @@ body {
 
 
   body * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   
   
