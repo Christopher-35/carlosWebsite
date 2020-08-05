@@ -53,7 +53,6 @@ body {
   display: flex !important;
   text-align: center !important;
   padding-left: 5%;
-  
 }
 
 .navbar {
@@ -61,12 +60,15 @@ body {
   width: 100% !important;
   z-index: 1 !important;
   padding: 1rem 1rem !important;
+  
 }
 
 .home-link {
   font-size: 138%;
   color: black !important;
   margin-left: 4%;
+  letter-spacing: .05em;
+
 }
 
 .home-link:hover {
@@ -77,6 +79,7 @@ body {
   font-size: 138%;
   color: black !important;
   margin-left: 10%;
+
 }
 
 .consulting-link:hover {
@@ -85,12 +88,16 @@ body {
 
 .dropdown {
   margin-left: 11% !important;
+  letter-spacing: .05em;
+
 }
 
 #basic-nav-dropdown {
   font-size: 138%;
   color: black;
   margin: 0;
+  letter-spacing: .05em;
+
 }
 
 .dropdown:hover {
@@ -101,6 +108,8 @@ body {
   font-size: 138%;
   color: black !important;
   margin-left: 14%;
+  letter-spacing: .05em;
+
 }
 
 .clientPortfolio-link:hover {
@@ -219,6 +228,20 @@ body {
   text-align: center;
   top: 3.2%;
   
+}
+
+.cool_logo {
+  width: 30%;
+  height: 40%;
+}
+
+.last-section {
+  position: absolute;
+  top: 390%;
+  left: 1%;
+  background: lightpink;
+  width: 98%;
+  height: 66%;
 }
 
 .zip-container{

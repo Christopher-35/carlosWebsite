@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // require('dotenv').config();
 // console.log('process.env', process.env.REACT_APP_GOOGLE_KEY);
+import langs from './langs.js';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import mapComponent from './gMaps';
@@ -21,21 +22,56 @@ class App extends Component {
         this.english = 'In English';
         this.spanish = 'En Español';
         this.state = {
-          currentLang: 'En Español'
+          currentLang: 'En Español',
+          headers: langs.headersEn,
+          practiceDrop : langs.practiceEn,
+          resourceDrop : langs.resourcesEn,
+          introTitles: langs.introTitlesEn,
+          introParagraphs: langs.introParagraphEn
+          
         };
         this.toggleLanguage = this.toggleLanguage.bind(this);
     }
 
     toggleLanguage () {
-      let newLang;
+      let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs;
       if (this.state.currentLang === this.spanish){
+        // newLang = this.english;
+        // newHeader = langs.headersEn;
+        // newPractice = langs.practiceEn;
+        // newResource = langs.resourcesEn;
+        // newTitles = langs.introTitlesEn;
+        // newParagraphs = langs.introParagraphEn;
         newLang = this.english;
+        newHeader = langs.headersSp;
+        newPractice = langs.practiceSp;
+        newResource = langs.resourcesSp;
+        newTitles = langs.introTitlesSp;
+        newParagraphs = langs.introParagraphSp;
+
       } else {
+        // newLang = this.spanish;
+        // newHeader = langs.headersSp;
+        // newPractice = langs.practiceSp;
+        // newResource = langs.resourcesSp;
+        // newTitles = langs.introTitlesSp;
+        // newParagraphs = langs.introParagraphSp;
+
         newLang = this.spanish;
+        newHeader = langs.headersEn;
+        newPractice = langs.practiceEn;
+        newResource = langs.resourcesEn;
+        newTitles = langs.introTitlesEn;
+        newParagraphs = langs.introParagraphEn;
       }
 
       this.setState({
-        currentLang: newLang
+        currentLang: newLang,
+        headers: newHeader,
+        practiceDrop : newPractice,
+        resourceDrop : newResource,
+        introTitles: newTitles,
+        introParagraphs: newParagraphs
       })
     }
 
@@ -75,47 +111,48 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link className='home-link' href="#home">About Our Firm</Nav.Link>
-                <NavDropdown title="Practice Areas" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">For Entrepreneurs</NavDropdown.Item>
+                <Nav.Link className='home-link' href="#home">{this.state.headers[0]}</Nav.Link>
+                <NavDropdown title={this.state.headers[1]} id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">{this.state.practiceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.2">Investor Tips/Training</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">{this.state.practiceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.3">Blog</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">{this.state.practiceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Case Studies</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">{this.state.practiceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="Resources" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">For Entrepreneurs</NavDropdown.Item>
+                <NavDropdown title={this.state.headers[2]} id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">{this.state.resourceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.2">Investor Tips/Training</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">{this.state.resourceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.3">Blog</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">{this.state.resourceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Case Studies</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">{this.state.resourceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link className='clientPortfolio-link' href="#clientPortfolio">Contact Info.</Nav.Link>
+                <Nav.Link className='clientPortfolio-link' href="#clientPortfolio">{this.state.headers[3]}</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
 
             <div className='about-me'>
             <div className='who'>
-              <p className='who-title'>Who We Are...</p>
-              <p className='who-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor justo non scelerisque feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent et elit non lacus dictum suscipit vitae eget nunc. In sit amet pellentesque velit, eget ultricies nisi. Pellentesque nec efficitur quam, at sodales nunc. Duis convallis nisi in odio vehicula, at ornare eros aliquam. Nullam vestibulum quis elit vitae mollis. Integer nec erat augue.</p>
+              <p className='who-title'>{this.state.introTitles[0]}</p>
+              <p className='who-p'>{this.state.introParagraphs[0]}</p>
             </div>
             <div className='what-table'>
-              <p className='what-title'>What We Bring To The Table...</p>
-              <p className='what-p'>Duis metus massa, lacinia id porttitor sed, malesuada sed dui. Duis vehicula et ipsum ac venenatis. Nulla fermentum ipsum et metus ultricies, at volutpat dui blandit. Nulla ante purus, scelerisque a ipsum ac, tincidunt cursus dui. Praesent varius eleifend leo id venenatis. Donec lacinia maximus tellus id suscipit. Vivamus tincidunt neque nec velit elementum, in ornare quam rutrum. Vivamus dictum ipsum et mauris placerat placerat. Aliquam eu dui vulputate, congue nunc id, eleifend velit. Phasellus non cursus neque, porta rhoncus massa.</p>
+              <p className='what-title'>{this.state.introTitles[1]}</p>
+              <p className='what-p'>{this.state.introParagraphs[1]}</p>
             </div>
             <div className='what-done'>
-            <p className='d-title'>What We've Done...</p>
-            <p className='d-p'>Donec non ante mattis purus lacinia dignissim ut sit amet mi. Mauris aliquet purus ac elit scelerisque imperdiet. Mauris purus est, commodo ac lectus ut, iaculis fermentum nunc. Sed fermentum, velit pharetra commodo sagittis, libero mi eleifend tellus, eu porttitor orci urna id ante. Suspendisse et nisi a arcu bibendum maximus. Sed libero mi, gravida quis felis in, venenatis luctus nibh. Maecenas ut pretium purus. Sed sit amet justo lectus. Fusce lobortis dolor vel elit pulvinar, Etiam in pulvinar metus.</p>
+            <p className='d-title'>{this.state.introTitles[2]}</p>
+            <p className='d-p'>{this.state.introParagraphs[2]}</p>
             </div>
             </div>
 
             <div className='home-clients'>
-              <h1 className='home-client-title'>Featured Clients</h1>
+            <img className='cool_logo' src='carlos.jpg' alt='logo' />
+              {/* <h1 className='home-client-title'>Featured Clients</h1> */}
               {/* <img src='zipLogo.png' className='zip-container'/> */}
               {/* <div className='zip-container' style={{background: 'zipLogo.png'}}></div> */}
               {/* <img src='jabord.png' className='ja-container'/> */}
@@ -129,6 +166,8 @@ class App extends Component {
             </div>
 
             <div className='home-blog'></div>
+
+            <div className='last-section'></div>
             
             {/* <br/>
             <img className='divBackground' src='passport.jpg' alt='books'/>
