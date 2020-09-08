@@ -8,11 +8,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+
 // import {REACT_APP_GOOGLE_KEY} from '../.env.local'
 
 // require('dotenv').config();
 // console.log('process.env', process.env.REACT_APP_GOOGLE_KEY);
 import langs from './langs.js';
+import GMap from './gMaps';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import mapComponent from './gMaps';
@@ -27,14 +32,14 @@ class App extends Component {
           practiceDrop : langs.practiceEn,
           resourceDrop : langs.resourcesEn,
           introTitles: langs.introTitlesEn,
-          introParagraphs: langs.introParagraphEn
-          
+          introParagraphs: langs.introParagraphEn,
+          formData: langs.formEn
         };
         this.toggleLanguage = this.toggleLanguage.bind(this);
     }
 
     toggleLanguage () {
-      let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs;
+      let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs, newForms;
       if (this.state.currentLang === this.spanish){
         // newLang = this.english;
         // newHeader = langs.headersEn;
@@ -48,7 +53,7 @@ class App extends Component {
         newResource = langs.resourcesSp;
         newTitles = langs.introTitlesSp;
         newParagraphs = langs.introParagraphSp;
-
+        newForms = langs.formSp;
       } else {
         // newLang = this.spanish;
         // newHeader = langs.headersSp;
@@ -63,6 +68,8 @@ class App extends Component {
         newResource = langs.resourcesEn;
         newTitles = langs.introTitlesEn;
         newParagraphs = langs.introParagraphEn;
+        newForms = langs.formEn;
+
       }
 
       this.setState({
@@ -71,7 +78,8 @@ class App extends Component {
         practiceDrop : newPractice,
         resourceDrop : newResource,
         introTitles: newTitles,
-        introParagraphs: newParagraphs
+        introParagraphs: newParagraphs,
+        formData: newForms
       })
     }
 
@@ -150,6 +158,8 @@ class App extends Component {
             </div>
             </div>
 
+            <img className='passport_gavel' src='passport.jpg' alt='passport and gavel'></img>
+
             <div className='home-clients'>
             <img className='cool_logo' src='carlos.jpg' alt='logo' />
               {/* <h1 className='home-client-title'>Featured Clients</h1> */}
@@ -165,9 +175,48 @@ class App extends Component {
 
             </div>
 
-            <div className='home-blog'></div>
+          <div className='home-blog'>
+          <Form className='user_form'>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>{this.state.formData[0]}</Form.Label>
+              <Form.Control type="usersName" placeholder={this.state.formData[1]} />
+            </Form.Group>
 
-            <div className='last-section'></div>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>{this.state.formData[2]}</Form.Label>
+              <Form.Control type="usersEmail" placeholder={this.state.formData[3]} />
+              <Form.Text className="text-muted">
+              {this.state.formData[4]}
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>{this.state.formData[5]}</Form.Label>
+              <Form.Control type="usersNumber" placeholder={this.state.formData[6]} />
+            </Form.Group>
+
+            <Form.Group controlId="message">
+              <Form.Row>
+              <Col as='div' sm={12}>
+              {/* <Form.Label column> */}
+              <Form.Label>{this.state.formData[7]}</Form.Label>
+              <Form.Control as="textarea" rows="4" placeholder={this.state.formData[8]} />
+              {/* <Form.Label /> */}
+              </Col>
+              </Form.Row>
+
+            </Form.Group>
+           
+            <Button variant="success" type="submit">
+            {this.state.formData[9]}
+            </Button>
+
+          </Form>
+          </div>
+
+            <div className='last-section'>
+              <GMap className='GMap'></GMap>
+            </div>
             
             {/* <br/>
             <img className='divBackground' src='passport.jpg' alt='books'/>
@@ -189,7 +238,7 @@ class App extends Component {
 
             <mapComponent/>             */}
             
-            {/* <Map className='gmap' google={this.props.google} zoom={14}>
+            {/* <Map className='g_map' google={this.props.google} zoom={14}>
             <Marker onClick={this.onMarkerClick}
             name={'Current location'} />
             <InfoWindow onClose={this.onInfoWindowClose}></InfoWindow>
@@ -208,11 +257,8 @@ class App extends Component {
 
 }
 
-// export default App;
+export default App;
 
-export default GoogleApiWrapper({
-    apiKey: ('AIzaSyA0wWqbGDTQum__FJsDqplkubn6vvGCblM')
-  })(App)
 
 // function Map() {
     

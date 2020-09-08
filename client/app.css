@@ -10,6 +10,17 @@
   box-sizing: border-box;
 }
 
+/* @media only screen and (max-width: 768px) {
+  .who-p {
+    font-size: 10px;
+  }
+} */
+
+/* html{
+  background-image: url('../public/passport.jpg');
+  z-index: -1;
+} */
+
 body {
   /* overflow-x: hidden; */
   height: 100% !important;
@@ -60,7 +71,7 @@ body {
   width: 100% !important;
   z-index: 1 !important;
   padding: 1rem 1rem !important;
-  
+  /* line-height: 1.5 !important; */
 }
 
 .home-link {
@@ -119,6 +130,7 @@ body {
 
 /*                                ABOUT US SECTION                   */
 .about-me {
+  display: flex;
   position: absolute;
   top: 16%;
   left: 1%;
@@ -129,15 +141,24 @@ body {
 }
 
 .who {
+  
+  display: flex;
+  flex: 1;
   position: absolute;
   left: 5%;
   top: 4%;
   width: 28%;
   height: 90%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow: auto;
   border: .2vw solid white;
 }
 
 .who-title {
+  /* display: flex; */
+
   position: absolute;
   top: 4%;
   width: 100%;
@@ -148,20 +169,30 @@ body {
 }
 
 .who-p {
+  /* display: flex; */
+
   position: absolute;
   color: white;
-  top: 20%;
+  top: 19%;
   margin: 3%;
   font-size: 110%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
 }
 
 .what-table {
+  display: flex;
+  flex: 1;
   position: absolute;
   left: 36%;
   top: 4%;
   width: 28%;
   height: 90%;
   border: .2vw solid white;
+  overflow: auto;
+
 }
 
 .what-title {
@@ -177,18 +208,21 @@ body {
 .what-p {
   position: absolute;
   color: white;
-  top: 20%;
+  top: 19%;
   margin: 3%;
   font-size: 110%;
 }
 
 .what-done {
+  /* display: flex; */
+  flex: 1;
   position: absolute;
   left: 67%;
   top: 4%;
   width: 28%;
   height: 90%;
   border: .2vw solid white;
+  overflow: auto;
 
 }
 
@@ -205,16 +239,24 @@ body {
 .d-p {
   position: absolute;
   color: white;
-  top: 20%;
+  top: 19%;
   margin: 3%;
   font-size: 110%;
+}
+
+
+.passport_gavel {
+  position: absolute;
+  top: 86%;
+  width: 100%;
+  height: 112.9%;
 }
 
 /*                  Companies On HomePage Section       */
 
 .home-clients {
   position: absolute;
-  top: 90%;
+  top: 200%;
   left: 1%;
   width: 98%;
   height: 96%;
@@ -235,14 +277,26 @@ body {
   height: 40%;
 }
 
-.last-section {
+.home-blog {
   position: absolute;
-  top: 390%;
+  top: 320%;
   left: 1%;
-  background: lightpink;
+  background: lightblue;
   width: 98%;
-  height: 66%;
+  height: 68%;
 }
+
+.user_form {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+#message {
+  width: 330% !important;
+}
+
+
 
 .zip-container{
   position: absolute;
@@ -292,20 +346,24 @@ body {
   
 }
 
-
-
-
-
-
-
-.home-blog {
+.last-section {
   position: absolute;
-  top: 190%;
+  top: 390%;
   left: 1%;
-  background: lightblue;
+  background: hsl(120, 25%, 75%);
   width: 98%;
   height: 66%;
+  /* display: flex;
+  justify-items: center;
+  align-items: center; */
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: auto;
 }
+
+
+
 
 
 
