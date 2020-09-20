@@ -25,6 +25,8 @@ body {
   /* overflow-x: hidden; */
   height: 100% !important;
   width: 100% !important;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .react-container {
@@ -133,11 +135,15 @@ body {
   display: flex;
   position: absolute;
   top: 16%;
-  left: 1%;
-  width: 98%;
+  left: .5%;
+  width: 99%;
   height: 69%;
-  background: hsl(215, 44%, 40%); 
+  background: hsl(215, 44%, 34%); 
   z-index: -1;
+  /* left: 6%;
+  top: 26%;
+  
+  transform: translate(-4%, -20%); */
 }
 
 .who {
@@ -247,8 +253,9 @@ body {
 
 .passport_gavel {
   position: absolute;
+  left: .5%;
   top: 86%;
-  width: 100%;
+  width: 99%;
   height: 112.9%;
 }
 
@@ -257,8 +264,8 @@ body {
 .home-clients {
   position: absolute;
   top: 200%;
-  left: 1%;
-  width: 98%;
+  left: .5%;
+  width: 99%;
   height: 96%;
   background: hsl(0, 0%, 93%) !important;
   z-index: -1;
@@ -279,10 +286,10 @@ body {
 
 .home-blog {
   position: absolute;
-  top: 320%;
-  left: 1%;
+  top: 298%;
+  left: .5%;
   background: lightblue;
-  width: 98%;
+  width: 99%;
   height: 68%;
 }
 
@@ -346,20 +353,100 @@ body {
   
 }
 
-.last-section {
+.map-section {
   position: absolute;
-  top: 390%;
-  left: 1%;
-  background: hsl(120, 25%, 75%);
-  width: 98%;
+  top: 368%;
+  left: .5%;
+  background: hsl(120, 25%, 85%);
+  width: 99%;
   height: 66%;
   /* display: flex;
   justify-items: center;
   align-items: center; */
-  display: flex;
+  /* display: flex;
   align-content: center;
   align-items: center;
-  margin: auto;
+  margin: auto; */
+}
+
+.GMap_Copy {
+  position: absolute;
+  background: lightyellow;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 93%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo {
+  position: absolute;
+  
+  top: 440%;
+  background: hsl(215, 44%, 20%); 
+  width: 100%;
+  height: 16%;
+}
+
+.info1 {
+  color: white;
+  position: absolute;
+  font-size: 140%;
+  font-weight: bold;
+  letter-spacing: .1em;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%, 7%);
+  display: flex;
+  justify-content: center;
+}
+
+.info2 {
+  color: white;
+  position: absolute;
+  font-size: 120%;
+  font-weight: bold;
+  letter-spacing: .1em;
+  left: 8%;
+  top: 78%;
+  transform: translate(-8%, -78%);
+  display: flex;
+  justify-content: center;
+}
+
+.info3 {
+  color: white;
+  position: absolute;
+  font-size: 120%;
+  font-weight: bold;
+  letter-spacing: .1em;
+  left: 62%;
+  top: 78%;
+  transform: translate(-62%, -78%);
+  display: flex;
+  justify-content: center;
+}
+
+.info4 {
+  color: white;
+  position: absolute;
+  font-size: 120%;
+  font-weight: bold;
+  letter-spacing: .1em;
+  left: 90%;
+  top: 78%;
+  transform: translate(-90%, -78%);
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.bold_word {
+  /* font-size: 120%; */
+  font-size: 100%;
 }
 
 

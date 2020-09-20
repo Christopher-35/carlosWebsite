@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './app.css'
 // import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps';
 import { urlencoded } from 'body-parser';
@@ -96,6 +97,7 @@ class App extends Component {
             border: '0'
         }
         return (
+        <BrowserRouter>
         <div className='react-container'>
             {/* <header>
               <div className='container'>
@@ -214,10 +216,20 @@ class App extends Component {
           </Form>
           </div>
 
-            <div className='last-section'>
-              <GMap className='GMap'></GMap>
+            <div className='map-section'>
+              <div className='GMap_Copy'>Map Replacement For API Call</div>
+              {/* <GMap className='GMap'></GMap> */}
             </div>
             
+            <div className='contactInfo'> 
+              <p className='info1'>Contact Information:</p>
+              <p className='info2'>
+                <b className='bold_word'>Address:&nbsp;</b> 305 Broadway Suite 1001 New York, NY 10007
+                {/* Tel: 1-917-402-7410 */}
+              </p>
+              <p className='info3'> <b className='bold_word'>Tel:&nbsp;</b> 1-917-402-7410 </p>
+              <p className='info4'><b className='bold_word'>Fax:&nbsp;</b> 1-646-304-9247 </p>
+            </div>
             {/* <br/>
             <img className='divBackground' src='passport.jpg' alt='books'/>
             <div className='map'><h1>Map</h1></div>
@@ -252,6 +264,7 @@ class App extends Component {
               </p>
             </div> */}
         </div>
+        </BrowserRouter>
         )
     }
 
