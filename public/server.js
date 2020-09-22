@@ -8,6 +8,7 @@ app.use(express.json());
 
 app.post('/', async (req, res) => {
   try {
+    console.log('req.body=', req.body);
     let { fullname } = req.body;
     console.log('fullname=',fullname);
     let email = req.body.email.toLowerCase();
@@ -56,11 +57,6 @@ app.post('/', async (req, res) => {
     res.json(messageWithSharedId);
   }
 
-//     // if (shareIdExists) {
-
-    // }
-    
-//     // console.log(body);
   } catch (err) {
     console.error(err.message);
   }

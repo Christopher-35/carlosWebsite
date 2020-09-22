@@ -41,7 +41,7 @@ langs.formEn = [
   'Email Adress', 'Enter Email', "We'll never share your email with anyone else.",
   'Phone Number', 'Enter Phone Number', 
   'Message', 'Enter Message',
-  'Submit', 'Submitted'
+  'Submit', 'Submitted', 'Should include a space'
 ]
 
 langs.formSp = [
@@ -49,7 +49,7 @@ langs.formSp = [
   'En Espanol', 'En Espanol', "En Espanol",
   'En Espanol', 'En Espanol', 
   'En Espanol', 'En Espanol',
-  'En Espanol', 'En Espanol'
+  'En Espanol', 'En Espanol', 'En Espanol'
 ]
 
 export default langs;

@@ -18,6 +18,7 @@ import Col from 'react-bootstrap/Col';
 // require('dotenv').config();
 // console.log('process.env', process.env.REACT_APP_GOOGLE_KEY);
 import langs from './langs.js';
+import SubmitForm from './components/Form';
 import GMap from './gMaps';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
@@ -178,10 +179,13 @@ class App extends Component {
             </div>
 
           <div className='home-blog'>
-          <Form className='user_form'>
-            <Form.Group controlId="formBasicEmail">
+            <SubmitForm className='user_form' formData={this.state.formData} />
+          {/* <Form className='user_form'>
+            <fieldset disabled={false}>
+            <Form.Group controlId="formBasicName">
               <Form.Label>{this.state.formData[0]}</Form.Label>
               <Form.Control type="usersName" placeholder={this.state.formData[1]} />
+              <Form.Text className="text-muted">{this.state.formData[11]}</Form.Text>
             </Form.Group>
 
             <Form.Group controlId="formBasicEmail">
@@ -199,12 +203,12 @@ class App extends Component {
 
             <Form.Group controlId="message">
               <Form.Row>
-              <Col as='div' sm={12}>
+              <Col as='div' sm={12}> */}
               {/* <Form.Label column> */}
-              <Form.Label>{this.state.formData[7]}</Form.Label>
-              <Form.Control as="textarea" rows="4" placeholder={this.state.formData[8]} />
+              {/* <Form.Label>{this.state.formData[7]}</Form.Label>
+              <Form.Control as="textarea" rows="4" placeholder={this.state.formData[8]} /> */}
               {/* <Form.Label /> */}
-              </Col>
+              {/* </Col>
               </Form.Row>
 
             </Form.Group>
@@ -212,8 +216,8 @@ class App extends Component {
             <Button variant="success" type="submit">
             {this.state.formData[9]}
             </Button>
-
-          </Form>
+          </fieldset>
+          </Form> */}
           </div>
 
             <div className='map-section'>
