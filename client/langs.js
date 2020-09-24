@@ -52,4 +52,12 @@ langs.formSp = [
   'En Espanol', 'En Espanol', 'En Espanol'
 ]
 
+langs.x = "  ❌";
+
+langs.check = "  ✔️"
+
+langs.border = ['', '3px solid #dc3545', '3px solid #28a745'];
+
+langs.background = ['', 'hsl(1, 100%, 94%)', 'hsl(117, 100%, 94%)']
+
 export default langs;

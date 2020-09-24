@@ -291,6 +291,7 @@ body {
   background: lightblue;
   width: 99%;
   height: 68%;
+  overflow: auto;
 }
 
 .user_form {
