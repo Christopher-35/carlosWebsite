@@ -36,7 +36,8 @@ const SubmitForm = ({ formData }) => {
     try {
 
     setFullNameInput(e.target.value);
-    let regName = /^[a-zA-Z]+( [a-zA-Z]+)+$/;
+    // let regName = /^[a-zA-Z]+( [a-zA-Z]+)+$/;
+    let regName = /^[a-z ,.'-]+$/i;
       if (e.target.value.length ===0 || !/\S/.test(e.target.value)){
       console.log('length=', e.target.value.length);
       setNameStatus(0);
