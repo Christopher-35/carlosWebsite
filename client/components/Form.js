@@ -27,17 +27,17 @@ const SubmitForm = ({ formData }) => {
   const [messageStatus, setMessageStatus] = useState(0);
 
 
-  const [canSubmitInput, setCanSubmitInput] = useState(false);
+  // const [canSubmitInput, setCanSubmitInput] = useState(false);
 
   const [isValidated, setIsValidated] = useState(false);
   const [disableAllButtons, setDisableAllButtons] = useState(false);
 
-
   const nameOnChange = (e) => {
     try {
-    let regName = /^[a-zA-Z]+( [a-zA-Z]+)+$/;
+
     setFullNameInput(e.target.value);
-      if (e.target.value.length === 0 || !/\S/.test(e.target.value)){
+    let regName = /^[a-zA-Z]+( [a-zA-Z]+)+$/;
+      if (e.target.value.length ===0 || !/\S/.test(e.target.value)){
       console.log('length=', e.target.value.length);
       setNameStatus(0);
       setCanSubmitName(false); 
@@ -46,13 +46,18 @@ const SubmitForm = ({ formData }) => {
       setNameStatus(1);
       setCanSubmitName(false); 
       // console.error('error bc you typed in', e.target.value);
-      }*/if(!regName.test(e.target.value)){
+      
+      }*/
+      
+      else if(!regName.test(e.target.value)){
         setNameStatus(1);
         setCanSubmitName(false);
       } else {
       // console.log('position', e.target.value.indexOf(' '));
       setNameStatus(2);
       setCanSubmitName(true);  
+      console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+
       if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitInput){
         setIsValidated(true);
       }
@@ -81,6 +86,8 @@ const SubmitForm = ({ formData }) => {
         // console.log('position', e.target.value.indexOf(' '));
         setEmailStatus(2);
         setCanSubmitEmail(true);  
+        console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+
         if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitInput){
           setIsValidated(true);
         }
@@ -92,6 +99,7 @@ const SubmitForm = ({ formData }) => {
 
   const numberOnChange = (e) => {
     try {
+      console.log('typeof', typeof e.target.value);
       setNumberInput(e.target.value);
       let copy = e.target.value.slice();
       copy = copy.replace(/-/g, "");
@@ -107,6 +115,8 @@ const SubmitForm = ({ formData }) => {
         // console.log('position', e.target.value.indexOf(' '));
         setNumberStatus(2);
         setCanSubmitNumber(true);  
+        console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+
         if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitInput){
           setIsValidated(true);
         }
@@ -118,20 +128,22 @@ const SubmitForm = ({ formData }) => {
 
   const messageOnChange = (e) => {
     try {
-      setEmailInput(e.target.value);
+      setMessageInput(e.target.value);
         if (e.target.value.length === 0 ){
-        setEmailStatus(0);
-        setCanSubmitEmail(false)
+        setMessageStatus(0);
+        setCanSubmitMessage(false)
         }
-        else if (e.target.value.length < 10) {
-        setEmailStatus(1);
-        setCanSubmitEmail(false);
+        else if (e.target.value.length < 15) {
+        setMessageStatus(1);
+        setCanSubmitMessage(false);
         // console.error('error bc you typed in', e.target.value);
         } else {
         // console.log('position', e.target.value.indexOf(' '));
-        setEmailStatus(2);
-        setCanSubmitEmail(true);  
-        if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitInput){
+        setMessageStatus(2);
+        setCanSubmitMessage(true);  
+        console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+
+        if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
           setIsValidated(true);
         }
       }
@@ -142,16 +154,18 @@ const SubmitForm = ({ formData }) => {
 
   const onSubmitForm = async ( e ) => {
     e.preventDefault();
+    console.log('validity=', isValidated)
     try {
-      e.currentTarget.checkValidity();
-      console.log('validity=', isValidated);
+      // e.currentTarget.checkValidity();
+      if (isValidated){
+      
         //  CREATE IF STATEMENT FOR ISVALIDATED VAR
-      if (canSubmitName){
+      
       const body = { 
         "fullname": fullNameInput,
-        "email": "",
-        "phonenumber": "",
-        "message": ""
+        "email": emailInput,
+        "phonenumber": numberInput,
+        "message": messageInput
 
       };
       const response = await fetch("http://localhost:5000", {
@@ -160,7 +174,8 @@ const SubmitForm = ({ formData }) => {
         body: JSON.stringify(body)
       });
       console.log('response', response);
-    }
+    
+      }
     } catch (err) {
       console.error(err.message);
       console.error('might not meet the name requirements');
@@ -235,6 +250,7 @@ const SubmitForm = ({ formData }) => {
         rows="4" 
         placeholder={formData[8]} 
         disabled={disableAllButtons}
+        style={{border: `${langs.border[messageStatus]}`, background: `${langs.background[messageStatus]}`}}
         required/>
         {/* <Form.Label /> */}
         </Col>
