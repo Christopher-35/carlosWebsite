@@ -37,7 +37,7 @@ langs.introParagraphSp = [
 ];
 
 langs.formEn = [
-  'Full Name', 'Enter Name', 
+  'Full Name', 'John Doe', 
   'Email Adress', 'Enter Email', "We'll never share your email with anyone else.",
   'Phone Number', 'Enter Phone Number', 
   'Message', 'Enter Message',
@@ -58,6 +58,22 @@ langs.check = "  ✔️"
 
 langs.border = ['', '3px solid #dc3545', '3px solid #28a745'];
 
-langs.background = ['', 'hsl(1, 100%, 94%)', 'hsl(117, 100%, 94%)']
+langs.background = ['', 'hsl(1, 100%, 94%)', 'hsl(117, 100%, 94%)'];
+
+langs.nameEn = ['Please include a space', 'Looks Good!'];
+
+langs.nameSp = ['en Espanol', '¡Es verdad!'];
+
+langs.emailEn = ['Please provide a valid email address', 'Looks Good!'];
+
+langs.emailSp = ['en Espanol', '¡Es verdad!'];
+
+langs.numberEn = ['Please provide a valid phone number', 'Looks Good!'];
+
+langs.numberSp = ['en Espanol', '¡Es verdad!'];
+
+langs.messageEn = ['Create message greater than 15 characters and less than 1000', 'Looks good!'];
+
+langs.numberSp = ['en Espanol', '¡Es verdad!'];
 
 export default langs;

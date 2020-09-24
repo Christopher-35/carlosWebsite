@@ -36,9 +36,10 @@ const SubmitForm = ({ formData }) => {
     try {
 
     setFullNameInput(e.target.value);
-    // let regName = /^[a-zA-Z]+( [a-zA-Z]+)+$/;
-    let regName = /^[a-z ,.'-]+$/i;
-      if (e.target.value.length ===0 || !/\S/.test(e.target.value)){
+    // const regName = new RegExp(/^[a-z ,.'-]+$/i);
+    // let regName = "^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$";
+    let regName = /\w+\s\w+/;
+      if (e.target.value.length === 0 || !/\S/.test(e.target.value)){
       console.log('length=', e.target.value.length);
       setNameStatus(0);
       setCanSubmitName(false); 
@@ -53,7 +54,7 @@ const SubmitForm = ({ formData }) => {
       else if(!regName.test(e.target.value)){
         setNameStatus(1);
         setCanSubmitName(false);
-      } else {
+      } else /*if (regName.test(e.target.value))*/ {
       // console.log('position', e.target.value.indexOf(' '));
       setNameStatus(2);
       setCanSubmitName(true);  
@@ -70,7 +71,7 @@ const SubmitForm = ({ formData }) => {
 
   const emailOnChange = (e) => {
     try {
-      let regName = /[\w-]+@([\w-]+\.)+[\w-]+/;
+      let regEmail = /[\w-]+@([\w-]+\.)+[\w-]+/;
       setEmailInput(e.target.value);
         if (e.target.value.length === 0){
         setEmailStatus(0);
@@ -80,7 +81,7 @@ const SubmitForm = ({ formData }) => {
         setEmailStatus(1);
         setCanSubmitEmail(false);
         // console.error('error bc you typed in', e.target.value);
-        }*/else if(!regName.test(e.target.value)){
+        }*/else if(!regEmail.test(e.target.value)){
           setEmailStatus(1);
           setCanSubmitEmail(false);
         } else {
@@ -134,7 +135,7 @@ const SubmitForm = ({ formData }) => {
         setMessageStatus(0);
         setCanSubmitMessage(false)
         }
-        else if (e.target.value.length < 15) {
+        else if (e.target.value.length < 20 || e.target.value.length > 1000) {
         setMessageStatus(1);
         setCanSubmitMessage(false);
         // console.error('error bc you typed in', e.target.value);
@@ -201,9 +202,9 @@ const SubmitForm = ({ formData }) => {
         required
         style={{border: `${langs.border[nameStatus]}`, background: `${langs.background[nameStatus]}`}}
         />      
-        <Form.Control.Feedback type="invalid">Please choose a username.</Form.Control.Feedback>
-        <Form.Control.Feedback> Good username </Form.Control.Feedback>
-        {/* <Form.Text className="text-muted">{formData[11]}</Form.Text> */}
+        {/* <Form.Control.Feedback type="invalid">Please choose a username.</Form.Control.Feedback>
+        <Form.Control.Feedback> Good username </Form.Control.Feedback> */}
+        <Form.Text className="text-muted">{formData[11]}</Form.Text>
       </Form.Group>
 
       <Form.Group controlId="formBasicEmail">
