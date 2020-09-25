@@ -23,6 +23,8 @@ import GMap from './gMaps';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import mapComponent from './gMaps';
+
+//Tell carlos to manipulate database data so querying is easier    LOOK INTO XSS
 class App extends Component {
     constructor(props) {
         super(props);
@@ -35,13 +37,14 @@ class App extends Component {
           resourceDrop : langs.resourcesEn,
           introTitles: langs.introTitlesEn,
           introParagraphs: langs.introParagraphEn,
-          formData: langs.formEn
+          formData: langs.formEn,
+          formMute: langs.muteEn
         };
         this.toggleLanguage = this.toggleLanguage.bind(this);
     }
 
     toggleLanguage () {
-      let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs, newForms;
+      let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs, newForms, newMutes;
       if (this.state.currentLang === this.spanish){
         // newLang = this.english;
         // newHeader = langs.headersEn;
@@ -56,6 +59,7 @@ class App extends Component {
         newTitles = langs.introTitlesSp;
         newParagraphs = langs.introParagraphSp;
         newForms = langs.formSp;
+        newMutes = langs.muteSp;
       } else {
         // newLang = this.spanish;
         // newHeader = langs.headersSp;
@@ -71,7 +75,7 @@ class App extends Component {
         newTitles = langs.introTitlesEn;
         newParagraphs = langs.introParagraphEn;
         newForms = langs.formEn;
-
+        newMutes = langs.muteEn;
       }
 
       this.setState({
@@ -81,7 +85,8 @@ class App extends Component {
         resourceDrop : newResource,
         introTitles: newTitles,
         introParagraphs: newParagraphs,
-        formData: newForms
+        formData: newForms,
+        formMute: newMutes
       })
     }
 
@@ -179,7 +184,7 @@ class App extends Component {
             </div>
 
           <div className='home-blog'>
-            <SubmitForm className='user_form' formData={this.state.formData} />
+            <SubmitForm className='user_form' formData={this.state.formData} formMute={this.state.formMute} />
           {/* <Form className='user_form'>
             <fieldset disabled={false}>
             <Form.Group controlId="formBasicName">

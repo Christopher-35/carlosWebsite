@@ -10,10 +10,57 @@ app.post('/', async (req, res) => {
   try {
     console.log('req.body=', req.body);
     let { fullname } = req.body;
+    fullname = fullname.trim();
     console.log('fullname=',fullname);
     let email = req.body.email.toLowerCase();
+    email = email.trim();
     console.log('email=',email);
     let { phonenumber } = req.body;
+    phonenumber = phonenumber.replace(/[-# ]/g, "");
+    let nArr = [];
+    if (phonenumber.length > 13) { 
+      console.log('length', phonenumber.length);
+      nArr = phonenumber.split('');
+      console.log('nArr', nArr);
+      nArr.splice(4, 0, '-');
+      nArr.splice(8, 0, '-');
+      nArr.splice(12, 0, '-');
+      phonenumber = nArr.join('');
+      console.log('nArr', nArr);
+      console.log('join4', nArr.join(''));
+    } else if (phonenumber.length === 13) {
+      console.log('length', phonenumber.length);
+      nArr = phonenumber.split('');
+      console.log('nArr', nArr);
+      nArr.splice(3, 0, '-');
+      nArr.splice(7, 0, '-');
+      nArr.splice(11, 0, '-');
+      phonenumber = nArr.join('');
+    } else if (phonenumber.length === 12) {
+      console.log('length', phonenumber.length);
+      nArr = phonenumber.split('');
+      console.log('nArr', nArr);
+      nArr.splice(2, 0, '-');
+      nArr.splice(6, 0, '-');
+      nArr.splice(10, 0, '-');
+      phonenumber = nArr.join('');
+    } else if (phonenumber.length === 11) {
+      console.log('length', phonenumber.length);
+      nArr = phonenumber.split('');
+      console.log('nArr', nArr);
+      nArr.splice(1, 0, '-');
+      nArr.splice(5, 0, '-');
+      nArr.splice(9, 0, '-');
+      phonenumber = nArr.join('');
+    } else if (phonenumber.length === 10) {
+      console.log('length', phonenumber.length);
+      nArr = phonenumber.split('');
+      console.log('nArr', nArr);
+      nArr.splice(3, 0, '-');
+      nArr.splice(7, 0, '-');
+      phonenumber = nArr.join('');
+    }
+
     console.log('phonenumber=',phonenumber);
     let { message } = req.body;
     console.log('message=',message);

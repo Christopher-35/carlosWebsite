@@ -1,10 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;  
-  /* height: 100%; */
-  box-sizing: border-box;
+.text-muted {
+  font-weight: bold;
+}
+
+.f_Label {
+  font-weight: bold;
 }

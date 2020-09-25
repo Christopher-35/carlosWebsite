@@ -37,43 +37,54 @@ langs.introParagraphSp = [
 ];
 
 langs.formEn = [
-  'Full Name', 'John Doe', 
-  'Email Adress', 'Enter Email', "We'll never share your email with anyone else.",
-  'Phone Number', 'Enter Phone Number', 
-  'Message', 'Enter Message',
-  'Submit', 'Submitted', 'Should include a space'
-]
+  'Full Name', 'John Doe', 'Please include a single space', 'Please include a single space  ❌', 'Looks Good!  ✔️',
+  'Email Adress', 'jdoe@example.com', "We'll never share your email with anyone else.", 'Please provide a valid email address  ❌', 'Looks Good!  ✔️',
+  'Phone Number', '555-555-0199', 'Please provide a number greater than 10 digits', 'Please provide a number greater than 10 digits  ❌', 'Looks Good! ✔️',
+  'Message', "What brings you to us?", 'Create a message greater than 15 characters, but less than 100', 'Create a message greater than 15 characters, but less than 100  ❌', 'Looks Good!  ✔️', 
+  'Submit', 'Recieved' 
+];
+//update state when wrong input to use langs.formen/sp
 
 langs.formSp = [
-  'En Espanol', 'En Espanol', 
-  'En Espanol', 'En Espanol', "En Espanol",
-  'En Espanol', 'En Espanol', 
-  'En Espanol', 'En Espanol',
-  'En Espanol', 'En Espanol', 'En Espanol'
+  'En Espanol', 'En Espanol', 'Looks Good!  ✔️', 'Looks Good!  ✔️', 'Looks Good!  ✔️',
+  'En Espanol', 'En Espanol', 'Looks Good!  ✔️', 'Looks Good!  ✔️', 'Looks Good!  ✔️',
+  'En Espanol', 'En Espanol', 'Looks Good!  ✔️', 'Looks Good!  ✔️', 'Looks Good!  ✔️',
+  'En Espanol', 'En Espanol', 'Looks Good!  ✔️', 'Looks Good!  ✔️', 'Looks Good!  ✔️',
+  'En Espanol', 'En Espanol'
+];
+
+langs.muteEn = [
+  'Please include a single space', '❌  Please include a single space', '✔️  Looks Good!',
+  "We'll NEVER share your email with anyone else.", '❌  Please provide a valid email address', '✔️  Looks Good!',
+  'Only use spaces or dashes and provide a number greater than 10 digits', '❌  Only use spaces or dashes and provide a number greater than 10 digits', '✔️  Looks Good!',
+  'Create a message greater than 15 characters, but less than 1000', '❌  Create a message greater than 15 characters, but less than 1000', '✔️  Looks Good!'
+];
+
+langs.muteSp = [
+  'Looks Hood!  ✔️', 'Looks Wood!  ✔️', 'Looks Good!  ✔️',
+  'Looks Hood!  ✔️', 'Looks Wood!  ✔️', 'Looks Good!  ✔️',
+  'Looks Hood!  ✔️', 'Looks Wood!  ✔️', 'Looks Good!  ✔️',
+  'Looks Hood!  ✔️', 'Looks Wood!  ✔️', 'Looks Good!  ✔️'
 ]
-
-langs.x = "  ❌";
-
-langs.check = "  ✔️"
 
 langs.border = ['', '3px solid #dc3545', '3px solid #28a745'];
 
 langs.background = ['', 'hsl(1, 100%, 94%)', 'hsl(117, 100%, 94%)'];
 
-langs.nameEn = ['Please include a space', 'Looks Good!'];
+langs.nameEn = ['Please include a single space  ❌', 'Looks Good!  ✔️'];
 
-langs.nameSp = ['en Espanol', '¡Es verdad!'];
+langs.nameSp = ['en Espanol  ❌', '¡Es verdad!  ✔️'];
 
-langs.emailEn = ['Please provide a valid email address', 'Looks Good!'];
+langs.emailEn = ['Please provide a valid email address  ❌', 'Looks Good!  ✔️'];
 
-langs.emailSp = ['en Espanol', '¡Es verdad!'];
+langs.emailSp = ['en Espanol  ❌', '¡Es verdad!  ✔️'];
 
-langs.numberEn = ['Please provide a valid phone number', 'Looks Good!'];
+langs.numberEn = ['Please provide a number greater than 9 digits  ❌', 'Looks Good!  ✔️'];
 
-langs.numberSp = ['en Espanol', '¡Es verdad!'];
+langs.numberSp = ['en Espanol  ❌', '¡Es verdad!  ✔️'];
 
-langs.messageEn = ['Create message greater than 15 characters and less than 1000', 'Looks good!'];
+langs.messageEn = ['Create message greater than 15 characters and less than 1000  ❌', 'Looks good!  ✔️'];
 
-langs.numberSp = ['en Espanol', '¡Es verdad!'];
+langs.numberSp = ['en Espanol  ❌', '¡Es verdad!  ✔️'];
 
 export default langs;
