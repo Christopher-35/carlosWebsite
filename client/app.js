@@ -41,10 +41,38 @@ class App extends Component {
           introTitles: langs.introTitlesEn,
           introParagraphs: langs.introParagraphEn,
           formData: langs.formEn,
-          formMute: langs.muteEn
+          formMute: langs.muteEn,
+          showInfo: false,
+          showHome: true
         };
         this.toggleLanguage = this.toggleLanguage.bind(this);
+        this.hideContactInfo = this.hideContactInfo.bind(this);
+        this.showContactInfo = this.showContactInfo.bind(this);
+        this.showHomeInfo = this.showHomeInfo.bind(this);
     }
+
+    hideContactInfo (e) {
+      e.preventDefault();
+      this.setState({
+        showInfo: false
+      })
+    }
+
+    showContactInfo (e) {
+      this.setState({
+        showHome: false,
+        showInfo: true
+      })
+    }
+
+    showHomeInfo (e) {
+      this.setState({
+        showHome: true,
+        showInfo: false
+      })
+    }
+
+    
 
     toggleLanguage () {
       let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs, newForms, newMutes;
@@ -107,110 +135,53 @@ class App extends Component {
             border: '0'
         }
         return (
+        <React.Fragment>
         <BrowserRouter>
-        <div className='react-container'>
-        {/* <Switch>
-        <Route to='/s' exact  />
+        <Switch>
+        <Route to='/' exact render={() => (<Home langs={{...this.state}}/>)} />
         <Route to='/practice-areas' exact  />
         <Route to='/resources' exact  />
-        <Route to='/#contact-info' exact  />
-        <Route to='/s' />
-        </Switch> */}
+        {/* <Route to='/' render={() => (<Home langs={{...this.state}}/>)} /> */}
+        <Route to='/#scroll-home' exact  render={() => (<Home langs={{...this.state}}/>)}/>
+        <Route to='/#contact-info' exact  render={() => (<Home langs={{...this.state}}/>)}/> 
+         {/* <Route to='/s' /> */}
+        </Switch>
  
-
-            {/* <header>
-              <div className='container'>
-                <nav>
-                    <ul>
-                        <li><a href='#'>About Our Firm</a></li>
-                        <li><a href='#'>Practice Areas</a></li>
-                        <li><a href='#'>Resources</a></li>
-                        <li><a href='#'>FAQs</a></li>
-                        <li><a href='#'>Contact Info.</a></li>
-                    </ul>
-                </nav>
-              </div>
-              <img className='coolLogo' src='carlos.jpg' alt='logo'/>
-            </header> */}
-
-        {/* <img src='brickLogo.png'/> */}
         {/* CONSIDER WRAPPING EVERYTHING IN FLEX CONTAINER */}
        <Navbar id='make_gray' bg="light" expand="lg" fixed='top'>
-          <Navbar.Brand href="#home"><button onClick={()=> this.toggleLanguage()}  className='lang_button'>{this.state.currentLang}</button></Navbar.Brand>
+          <Navbar.Brand><button onClick={()=> this.toggleLanguage()}  className='lang_button'>{this.state.currentLang}</button></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                &nbsp;&nbsp;&nbsp;&nbsp;   <Nav.Link className='home-link' as={NavLink} to="/homes">{this.state.headers[0]}</Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;<Nav.Link onClick={this.showHomeInfo} className='home-link' as={NavLink} to="/#scroll-home">{this.state.headers[0]}</Nav.Link>
                 <NavDropdown title={this.state.headers[1]} id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">{this.state.practiceDrop[0]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.1">{this.state.practiceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.2">{this.state.practiceDrop[1]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.2">{this.state.practiceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.3">{this.state.practiceDrop[2]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.3">{this.state.practiceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">{this.state.practiceDrop[3]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.4">{this.state.practiceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title={this.state.headers[2]} id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">{this.state.resourceDrop[0]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.1">{this.state.resourceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.2">{this.state.resourceDrop[1]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.2">{this.state.resourceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.3">{this.state.resourceDrop[2]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.3">{this.state.resourceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">{this.state.resourceDrop[3]}</NavDropdown.Item>
+                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.4">{this.state.resourceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link className='clientPortfolio-link' href="#clientPortfolio">{this.state.headers[3]}</Nav.Link>
+                <Nav.Link onClick={this.showContactInfo} className='clientPortfolio-link' as={NavLink} to="/#contact-info">{this.state.headers[3]}</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
 
-            <Home langs={{...this.state}}/>
-
-            {/* <div className='about-me'>
-            <div className='who'>
-              <p className='who-title'>{this.state.introTitles[0]}</p>
-              <p className='who-p'>{this.state.introParagraphs[0]}</p>
-            </div>
-            <div className='what-table'>
-              <p className='what-title'>{this.state.introTitles[1]}</p>
-              <p className='what-p'>{this.state.introParagraphs[1]}</p>
-            </div>
-            <div className='what-done'>
-            <p className='d-title'>{this.state.introTitles[2]}</p>
-            <p className='d-p'>{this.state.introParagraphs[2]}</p>
-            </div>
-            </div>
-
-            <img className='passport_gavel' src='passport.jpg' alt='passport and gavel'></img>
-
-            <div className='home-clients'>
-            <img className='cool_logo' src='carlos.jpg' alt='logo' />
-            
-              
-            </div>
-
-          <div className='submit_div'>
-            <SubmitForm className='user_form' formData={this.state.formData} formMute={this.state.formMute} />
-          
-          </div>
-            <div className='map-section'>
-              <div className='GMap_Copy'>Map Replacement For API Call</div> */}
-
-              {/* <GMap className='GMap'></GMap> */}
-
-            {/* </div> */}
-            
-            {/* <div className='contactInfo'> 
-              <p className='info1'>Contact Information:</p>
-              <p className='info2'>
-                <b className='bold_word'>Address:&nbsp;</b> 305 Broadway Suite 1001 New York, NY 10007
-              </p>
-              <p className='info3'> <b className='bold_word'>Tel:&nbsp;</b> 1-917-402-7410 </p>
-              <p className='info4'><b className='bold_word'>Fax:&nbsp;</b> 1-646-304-9247 </p>
-            </div> */}
-           
-        </div>
+            {/* <Home langs={{...this.state}}/> */}
+         
         </BrowserRouter>
+        </React.Fragment>
+
         )
     }
 

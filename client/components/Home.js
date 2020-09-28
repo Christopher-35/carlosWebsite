@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import GMap from '../gMaps';
 import SubmitForm from './Form';
 import './home.css'
@@ -46,14 +46,35 @@ import './home.css'
 //     </div>
 //   </React.Fragment>
 // }
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
- const Home = ( { langs }) => {
+const scrollToTop = () => window.scrollTo(0, 0);
+
+ const Home = ( {langs} ) => {
+
+  const myRef = useRef(null);
+  const otherRef = useRef(null);
+
+  const useScroll = () => scrollToRef(myRef);
+
+  const homeScroll = () => scrollToTop();
+  
+
+  useEffect ( () => {
+    console.log('state', langs);
+    if (langs.showInfo){
+      useScroll();
+    } else {
+      homeScroll();
+    }
+   
+  }, ) 
  
   return (
     <React.Fragment>
-      {console.log('state', langs)}
+      {/* {console.log('state', langs)} */}
 
-           <div className='about-me'>
+           <div id="scroll-home" ref={otherRef} className='about-me'>
        <div className='who'>
          <p className='who-title'>{langs.introTitles[0]}</p>
          <p className='who-p'>{langs.introParagraphs[0]}</p>
@@ -83,7 +104,7 @@ import './home.css'
        {/* <GMap className='GMap'></GMap> */}
      </div>
     
-     <div className='contactInfo'> 
+     <div ref={myRef} id='contact-info' className='contactInfo'> 
        <p className='info1'>Contact Information:</p>
        <p className='info2'>
          <b className='bold_word'>Address:&nbsp;</b> 305 Broadway Suite 1001 New York, NY 10007
