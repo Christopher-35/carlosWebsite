@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 import './app.css'
 // import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps';
 import { urlencoded } from 'body-parser';
@@ -20,6 +20,9 @@ import Col from 'react-bootstrap/Col';
 import langs from './langs.js';
 import SubmitForm from './components/Form';
 import GMap from './gMaps';
+import About from './components/About';
+import Home from './components/Home';
+import Shop from './components/Shop';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import mapComponent from './gMaps';
@@ -88,6 +91,7 @@ class App extends Component {
         formData: newForms,
         formMute: newMutes
       })
+      // console.log('state', [...this.state]);
     }
 
 
@@ -105,6 +109,15 @@ class App extends Component {
         return (
         <BrowserRouter>
         <div className='react-container'>
+        {/* <Switch>
+        <Route to='/s' exact  />
+        <Route to='/practice-areas' exact  />
+        <Route to='/resources' exact  />
+        <Route to='/#contact-info' exact  />
+        <Route to='/s' />
+        </Switch> */}
+ 
+
             {/* <header>
               <div className='container'>
                 <nav>
@@ -127,7 +140,7 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link className='home-link' href="#home">{this.state.headers[0]}</Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;   <Nav.Link className='home-link' as={NavLink} to="/homes">{this.state.headers[0]}</Nav.Link>
                 <NavDropdown title={this.state.headers[1]} id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">{this.state.practiceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -151,7 +164,9 @@ class App extends Component {
             </Navbar.Collapse>
             </Navbar>
 
-            <div className='about-me'>
+            <Home langs={{...this.state}}/>
+
+            {/* <div className='about-me'>
             <div className='who'>
               <p className='who-title'>{this.state.introTitles[0]}</p>
               <p className='who-p'>{this.state.introParagraphs[0]}</p>
@@ -170,108 +185,30 @@ class App extends Component {
 
             <div className='home-clients'>
             <img className='cool_logo' src='carlos.jpg' alt='logo' />
-              {/* <h1 className='home-client-title'>Featured Clients</h1> */}
-              {/* <img src='zipLogo.png' className='zip-container'/> */}
-              {/* <div className='zip-container' style={{background: 'zipLogo.png'}}></div> */}
-              {/* <img src='jabord.png' className='ja-container'/> */}
-              {/* <img src='jinglz.png' className='jin-container'/> */}
-              {/* <img src='' className='semantic-container'/>
-              <img src='' className='talkbox-container'/>
-              <img src='' className='h1-container'/>
-              <img src='' className='bms-container'/>
-              <img src='' className='equities-container'/> */}
-
-            </div>
-
-          <div className='home-blog'>
-            <SubmitForm className='user_form' formData={this.state.formData} formMute={this.state.formMute} />
-          {/* <Form className='user_form'>
-            <fieldset disabled={false}>
-            <Form.Group controlId="formBasicName">
-              <Form.Label>{this.state.formData[0]}</Form.Label>
-              <Form.Control type="usersName" placeholder={this.state.formData[1]} />
-              <Form.Text className="text-muted">{this.state.formData[11]}</Form.Text>
-            </Form.Group>
-
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>{this.state.formData[2]}</Form.Label>
-              <Form.Control type="usersEmail" placeholder={this.state.formData[3]} />
-              <Form.Text className="text-muted">
-              {this.state.formData[4]}
-              </Form.Text>
-            </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>{this.state.formData[5]}</Form.Label>
-              <Form.Control type="usersNumber" placeholder={this.state.formData[6]} />
-            </Form.Group>
-
-            <Form.Group controlId="message">
-              <Form.Row>
-              <Col as='div' sm={12}> */}
-              {/* <Form.Label column> */}
-              {/* <Form.Label>{this.state.formData[7]}</Form.Label>
-              <Form.Control as="textarea" rows="4" placeholder={this.state.formData[8]} /> */}
-              {/* <Form.Label /> */}
-              {/* </Col>
-              </Form.Row>
-
-            </Form.Group>
-           
-            <Button variant="success" type="submit">
-            {this.state.formData[9]}
-            </Button>
-          </fieldset>
-          </Form> */}
-          </div>
-
-            <div className='map-section'>
-              <div className='GMap_Copy'>Map Replacement For API Call</div>
-              {/* <GMap className='GMap'></GMap> */}
-            </div>
             
-            <div className='contactInfo'> 
+              
+            </div>
+
+          <div className='submit_div'>
+            <SubmitForm className='user_form' formData={this.state.formData} formMute={this.state.formMute} />
+          
+          </div>
+            <div className='map-section'>
+              <div className='GMap_Copy'>Map Replacement For API Call</div> */}
+
+              {/* <GMap className='GMap'></GMap> */}
+
+            {/* </div> */}
+            
+            {/* <div className='contactInfo'> 
               <p className='info1'>Contact Information:</p>
               <p className='info2'>
                 <b className='bold_word'>Address:&nbsp;</b> 305 Broadway Suite 1001 New York, NY 10007
-                {/* Tel: 1-917-402-7410 */}
               </p>
               <p className='info3'> <b className='bold_word'>Tel:&nbsp;</b> 1-917-402-7410 </p>
               <p className='info4'><b className='bold_word'>Fax:&nbsp;</b> 1-646-304-9247 </p>
-            </div>
-            {/* <br/>
-            <img className='divBackground' src='passport.jpg' alt='books'/>
-            <div className='map'><h1>Map</h1></div>
-            <p className='middle-left'>
-                1)&nbsp Talk About the type of cases you handle (h1b1, marriage cases, naturalization, etc.)
-                <br/>
-                2) &nbspInsert Picture Here &nbsp &nbsp &nbsp Talk about yourself/experience briefly and include law school
-                <br/>
-                Request a Consultation <br/>
-                <input type='text' placeholder='Name'/><br/>
-                <input type='text' placeholder='E-mail'/><br/>
-                <input type='text' placeholder='Phone Number'/><br/><br/>
-                <input className='message' type='text' placeholder='Message'/><br/>
-                4)  &nbspInsert Google Maps Location Here&nbsp  Allows people to find you on google maps if you want it
-                <br/><br/><br/>
-            </p>
-            <p><button className='logo'>En Español</button></p>
-
-            <mapComponent/>             */}
-            
-            {/* <Map className='g_map' google={this.props.google} zoom={14}>
-            <Marker onClick={this.onMarkerClick}
-            name={'Current location'} />
-            <InfoWindow onClose={this.onInfoWindowClose}></InfoWindow>
-            </Map> */}
-
-            {/* <section></section>
-            <div className='words'>
-              <p>Contact Information:
-                <p className='contact'>
-                 </p>
-              </p>
             </div> */}
+           
         </div>
         </BrowserRouter>
         )

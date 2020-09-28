@@ -42,7 +42,7 @@ const SubmitForm = ({ formData, formMute }) => {
 
   const nameOnChange = (e) => {
     try {
-
+    console.log('props', langs);
     setFullNameInput(e.target.value);
     // const regName = new RegExp(/^[a-z ,.'-]+$/i);
     // let regName = "^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$";
@@ -187,7 +187,7 @@ const SubmitForm = ({ formData, formMute }) => {
       } else {
       
         //  CREATE IF STATEMENT FOR ISVALIDATED VAR
-      // setDisableAllButtons(true);
+      setDisableAllButtons(true);
       setSubmitColor('hsl(134, 61%, 31%)')
       setSubmitMessage('Submission Successful! If you want to re-submit, please refresh the page');
       const body = { 

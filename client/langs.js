@@ -1,6 +1,6 @@
 let langs = {};
 
-langs.headersEn = ['About Our Firm', 'Practice Areas', 'Resources', 'Contact Info.'];
+langs.headersEn = ['Home', 'Practice Areas', 'Resources', 'Contact Info.'];
 
 langs.headersSp = ['To Spanish', 'To Spanish', 'To Spanish', 'To Spanish'];
 
