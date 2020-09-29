@@ -53,19 +53,15 @@ const scrollToTop = () => window.scrollTo(0, 0);
  const Home = ( {langs} ) => {
 
   const myRef = useRef(null);
-  const otherRef = useRef(null);
 
-  const useScroll = () => scrollToRef(myRef);
-
-  const homeScroll = () => scrollToTop();
-  
+  const useScroll = () => scrollToRef(myRef);  
 
   useEffect ( () => {
     console.log('state', langs);
-    if (langs.showInfo){
+    if (langs.showInfo === 'contact'){
       useScroll();
-    } else {
-      homeScroll();
+    } else if (langs.showInfo === 'home') {
+      scrollToTop();
     }
    
   }, ) 
@@ -74,7 +70,7 @@ const scrollToTop = () => window.scrollTo(0, 0);
     <React.Fragment>
       {/* {console.log('state', langs)} */}
 
-           <div id="scroll-home" ref={otherRef} className='about-me'>
+           <div id="scroll-home" className='about-me'>
        <div className='who'>
          <p className='who-title'>{langs.introTitles[0]}</p>
          <p className='who-p'>{langs.introParagraphs[0]}</p>

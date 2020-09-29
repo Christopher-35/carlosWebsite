@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Switch, withRouter, Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 import './app.css'
 // import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps';
 import { urlencoded } from 'body-parser';
@@ -7,6 +8,8 @@ import { urlencoded } from 'body-parser';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Form from 'react-bootstrap/Form';
@@ -22,7 +25,8 @@ import SubmitForm from './components/Form';
 import GMap from './gMaps';
 import About from './components/About';
 import Home from './components/Home';
-import Shop from './components/Shop';
+import Resources from './components/Resources';
+import PracticeAreas from './components/PracticeAreas';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import mapComponent from './gMaps';
@@ -42,35 +46,32 @@ class App extends Component {
           introParagraphs: langs.introParagraphEn,
           formData: langs.formEn,
           formMute: langs.muteEn,
-          showInfo: false,
-          showHome: true
+          showInfo: null
         };
         this.toggleLanguage = this.toggleLanguage.bind(this);
-        this.hideContactInfo = this.hideContactInfo.bind(this);
-        this.showContactInfo = this.showContactInfo.bind(this);
-        this.showHomeInfo = this.showHomeInfo.bind(this);
+        this.toggleScroll = this.toggleScroll.bind(this);
+        // this.hideContactInfo = this.hideContactInfo.bind(this);
+        // this.showContactInfo = this.showContactInfo.bind(this);
     }
 
-    hideContactInfo (e) {
-      e.preventDefault();
+    toggleScroll (value) {
+      // e.preventDefault();
       this.setState({
-        showInfo: false
+        showInfo: value
       })
     }
 
-    showContactInfo (e) {
-      this.setState({
-        showHome: false,
-        showInfo: true
-      })
-    }
+    // showContactInfo (e) {
+    //   this.setState({
+    //     showInfo: 'contact'
+    //   })
+    // }
 
-    showHomeInfo (e) {
-      this.setState({
-        showHome: true,
-        showInfo: false
-      })
-    }
+    // showHomeInfo (e) {
+    //   this.setState({
+    //     showInfo: 'home'
+    //   })
+    // }
 
     
 
@@ -108,7 +109,7 @@ class App extends Component {
         newForms = langs.formEn;
         newMutes = langs.muteEn;
       }
-
+      this.toggleScroll(null);
       this.setState({
         currentLang: newLang,
         headers: newHeader,
@@ -122,7 +123,8 @@ class App extends Component {
       // console.log('state', [...this.state]);
     }
 
-
+    //make ur own file for navbar
+    
     render () {
         let map = {
             src: 'url(https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1152793907268!2d-74.00773368459491!3d40.71547867933162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a21c5648ca7%3A0x9e7cfbfc2568d0c9!2s305%20Broadway%2C%20New%20York%2C%20NY%2010007!5e0!3m2!1sen!2sus!4v1592344414823!5m2!1sen!2sus)',
@@ -138,48 +140,49 @@ class App extends Component {
         <React.Fragment>
         <BrowserRouter>
         <Switch>
-        <Route to='/' exact render={() => (<Home langs={{...this.state}}/>)} />
-        <Route to='/practice-areas' exact  />
-        <Route to='/resources' exact  />
+
+        <Route path='/' exact render={() => (<Home langs={{...this.state}}/>)} />
+        <Route path='/resources' exact render={() => (<Resources/>)} />
+        <Route path='/practice-areas' exact render={() => (<PracticeAreas/>)}  />
         {/* <Route to='/' render={() => (<Home langs={{...this.state}}/>)} /> */}
-        <Route to='/#scroll-home' exact  render={() => (<Home langs={{...this.state}}/>)}/>
-        <Route to='/#contact-info' exact  render={() => (<Home langs={{...this.state}}/>)}/> 
+        <Route path='/#scroll-home' exact  render={() => (<Home langs={{...this.state}}/>)}/>
+        <Route path='/#contact-info' exact  render={() => (<Home langs={{...this.state}}/>)}/> 
          {/* <Route to='/s' /> */}
         </Switch>
- 
+
         {/* CONSIDER WRAPPING EVERYTHING IN FLEX CONTAINER */}
        <Navbar id='make_gray' bg="light" expand="lg" fixed='top'>
           <Navbar.Brand><button onClick={()=> this.toggleLanguage()}  className='lang_button'>{this.state.currentLang}</button></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                &nbsp;&nbsp;&nbsp;&nbsp;<Nav.Link onClick={this.showHomeInfo} className='home-link' as={NavLink} to="/#scroll-home">{this.state.headers[0]}</Nav.Link>
+                &nbsp;&nbsp;&nbsp;&nbsp;<Nav.Link exact onClick={() => this.toggleScroll('home')} className='home-link' as={NavLink} to="/#scroll-home">{this.state.headers[0]}</Nav.Link>
                 <NavDropdown title={this.state.headers[1]} id="basic-nav-dropdown">
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.1">{this.state.practiceDrop[0]}</NavDropdown.Item>
+                    {/* <NavDropdown.Item>{this.state.practiceDrop[0]}</NavDropdown.Item> */}
+                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.2">{this.state.practiceDrop[1]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.3">{this.state.practiceDrop[2]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.4">{this.state.practiceDrop[3]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title={this.state.headers[2]} id="basic-nav-dropdown">
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.1">{this.state.resourceDrop[0]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.2">{this.state.resourceDrop[1]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.3">{this.state.resourceDrop[2]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item onClick={this.hideContactInfo} href="#action/3.4">{this.state.resourceDrop[3]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link onClick={this.showContactInfo} className='clientPortfolio-link' as={NavLink} to="/#contact-info">{this.state.headers[3]}</Nav.Link>
+                <Nav.Link exact onClick={() => this.toggleScroll('contact')} className='clientPortfolio-link' as={NavLink} to="/#contact-info">{this.state.headers[3]}</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
 
             {/* <Home langs={{...this.state}}/> */}
-         
-        </BrowserRouter>
+            </BrowserRouter>
         </React.Fragment>
 
         )
