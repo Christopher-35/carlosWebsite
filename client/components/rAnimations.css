@@ -1,0 +1,1796 @@
+.purp{
+  height: 100%;
+  width: 100%;
+  animation: purp ease 1.5s;
+  -webkit-animation: purp ease 1.5s;
+  -moz-animation: purp ease 1.5s;
+  -o-animation: purp ease 1.5s;
+  -ms-animation: purp ease 1.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes purp {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes purp {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes purp {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes purp {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes purp {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.jaIm {
+  height: 100%;
+  width: 100%;
+  animation: jaIm ease 1.5s;
+  -webkit-animation: jaIm ease 1.5s;
+  -moz-animation: jaIm ease 1.5s;
+  -o-animation: jaIm ease 1.5s;
+  -ms-animation: jaIm ease 1.5s;
+}
+
+@keyframes jaIm {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes jaIm {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes jaIm {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes jaIm {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes jaIm {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.jinD {
+  height: 100%;
+  width: 100%;
+  animation: jinD ease 1.5s;
+  -webkit-animation: jinD ease 1.5s;
+  -moz-animation: jinD ease 1.5s;
+  -o-animation: jinD ease 1.5s;
+  -ms-animation: jinD ease 1.5s;
+}
+
+@keyframes jinD {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes jinD {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes jinD {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes jinD {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes jinD {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.sDem {
+  height: 100%;
+  width: 100%;
+  animation: sDem ease 1.5s;
+  -webkit-animation: sDem ease 1.5s;
+  -moz-animation: sDem ease 1.5s;
+  -o-animation: sDem ease 1.5s;
+  -ms-animation: sDem ease 1.5s;
+}
+
+@keyframes sDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes sDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes sDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes sDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes sDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.tDem {
+  height: 100%;
+  width: 100%;
+  animation: tDem ease 1.5s;
+  -webkit-animation: tDem ease 1.5s;
+  -moz-animation: tDem ease 1.5s;
+  -o-animation: tDem ease 1.5s;
+  -ms-animation: tDem ease 1.5s;
+}
+
+@keyframes tDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes tDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes tDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes tDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes tDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.hImg {
+  height: 100%;
+  width: 100%;
+  animation: hImg ease 1.5s;
+  -webkit-animation: hImg ease 1.5s;
+  -moz-animation: hImg ease 1.5s;
+  -o-animation: hImg ease 1.5s;
+  -ms-animation: hImg ease 1.5s;
+}
+
+@keyframes hImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes hImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes hImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes hImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes hImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.bImg {
+  height: 100%;
+  width: 100%;
+  animation: bImg ease 1.5s;
+  -webkit-animation: bImg ease 1.5s;
+  -moz-animation: bImg ease 1.5s;
+  -o-animation: bImg ease 1.5s;
+  -ms-animation: bImg ease 1.5s;
+}
+
+@keyframes bImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes bImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes bImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes bImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes bImg {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.eDem {
+  height: 100%;
+  width: 100%;
+  animation: eDem ease 1.5s;
+  -webkit-animation: eDem ease 1.5s;
+  -moz-animation: eDem ease 1.5s;
+  -o-animation: eDem ease 1.5s;
+  -ms-animation: eDem ease 1.5s;
+}
+
+@keyframes eDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes eDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes eDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes eDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes eDem {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/*-Top-Left-Logo-Animations-------------------------------------------------------------------------------------------------*/
+
+.zi {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: zi ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: zi ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: zi ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: zi ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: zi ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes zi {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes zi {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes zi {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes zi {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes zi {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+.ja {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: ja ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: ja ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: ja ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: ja ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: ja ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes ja {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes ja {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes ja {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes ja {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes ja {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+.ji {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: ji ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: ji ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: ji ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: ji ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: ji ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes ji {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes ji {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes ji {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes ji {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes ji {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+.se {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: se ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: se ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: se ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: se ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: se ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes se {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes se {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes se {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes se {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes se {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+.ta {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: ta ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: ta ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: ta ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: ta ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: ta ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes ta {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes ta {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes ta {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes ta {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes ta {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+.h1 {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: h1 ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: h1 ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: h1 ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: h1 ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: h1 ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes h1 {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes h1 {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes h1 {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes h1 {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes h1 {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+.bm {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: bm ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: bm ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: bm ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: bm ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: bm ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes bm {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes bm {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes bm {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes bm {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes bm {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+.eq {
+  height: 11%;
+  width: 48%;
+  justify-self: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  top: 16%;
+  left: 20%;
+  float: left;
+  animation: eq ease .8s;
+  animation-timing-function: linear;
+  -webkit-animation: eq ease .8s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: eq ease .8s;
+  -moz-animation-timing-function: linear;
+  -o-animation: eq ease .8s;
+  -o-animation-timing-function: linear;
+  -ms-animation: eq ease .8s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes eq {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-moz-keyframes eq {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-webkit-keyframes eq {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-o-keyframes eq {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+@-ms-keyframes eq {
+  from {left: 0; opacity: 0}
+  to {left: 20%; opacity: 1}
+}
+
+/*-Founded Dates----------------------------------------------------------------------------------------------------------------*/
+
+.zDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: zDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: zDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: zDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: zDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: zDate ease 1s;
+  -ms-animation-timing-function: linear;
+
+}
+
+@keyframes zDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes zDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes zDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes zDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes zDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.jaDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: jaDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: jaDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: jaDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: jaDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: jaDate ease 1s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes jaDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes jaDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes jaDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes jaDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes jaDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.jinDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: jinDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: jinDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: jinDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: jinDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: jinDate ease 1s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes jinDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes jinDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes jinDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes jinDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes jinDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.sDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: sDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: sDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: sDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: sDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: sDate ease 1s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes sDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes sDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes sDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes sDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes sDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.tDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: tDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: tDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: tDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: tDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: tDate ease 1s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes tDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes tDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes tDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes tDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes tDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.hDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: hDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: hDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: hDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: hDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: hDate ease 1s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes hDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes hDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes hDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes hDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes hDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.bDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: bDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: bDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: bDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: bDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: bDate ease 1s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes bDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes bDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes bDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes bDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes bDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.eDate {
+  position: absolute;
+  height: 11%;
+  width: 78%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-size: 3vh;
+  display: table;
+  text-align: left;
+  text-decoration: none;
+  top: 20%;
+  font-weight: bold;
+  padding: 0;
+  animation: eDate ease 1s;
+  animation-timing-function: linear;
+  -webkit-animation: eDate ease 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: eDate ease 1s;
+  -moz-animation-timing-function: linear;
+  -o-animation: eDate ease 1s;
+  -o-animation-timing-function: linear;
+  -ms-animation: eDate ease 1s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes eDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes eDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes eDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes eDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes eDate {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+/*----------- Actual Founders ----------------------------------------------------------------------------------------------------------------*/
+
+.zFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: zFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: zFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: zFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: zFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: zFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes zFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes zFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes zFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes zFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes zFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.jaFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: jaFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: jaFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: jaFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: jaFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: jaFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes jaFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes jaFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes jaFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes jaFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes jaFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.jinFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: jinFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: jinFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: jinFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: jinFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: jinFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes jinFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes jinFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes jinFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes jinFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes jinFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.sFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: sFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: sFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: sFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: sFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: sFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes sFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes sFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes sFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes sFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes sFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.tFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: tFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: tFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: tFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: tFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: tFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes tFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes tFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes tFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes tFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes tFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.hFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: hFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: hFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: hFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: hFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: hFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes hFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes hFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes hFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes hFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes hFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.bFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: bFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: bFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: bFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: bFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: bFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes bFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes bFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes bFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes bFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes bFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.eFound {
+  height: 5%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  color: #3E3E3E;
+  font-family: akkurat-pro;
+  font-size: 1vw;
+  font-style: italic;
+  animation: eFound ease 1.2s;
+  animation-timing-function: linear;
+  -webkit-animation: eFound ease 1.2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: eFound ease 1.2s;
+  -moz-animation-timing-function: linear;
+  -o-animation: eFound ease 1.2s;
+  -o-animation-timing-function: linear;
+  -ms-animation: eFound ease 1.2s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes eFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes eFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes eFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes eFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes eFound {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+
+/*-------------------------------Company Paragraph------------------------------------------------------------------------------------------------ */
+
+.zPar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: zPar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: zPar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: zPar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: zPar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: zPar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes zPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes zPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes zPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes zPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes zPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.jaPar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: jaPar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: jaPar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: jaPar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: jaPar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: jaPar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes jaPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes jaPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes jaPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes jaPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes jaPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.jinPar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: jinPar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: jinPar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: jinPar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: jinPar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: jinPar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes jinPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes jinPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes jinPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes jinPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes jinPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.sPar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: sPar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: sPar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: sPar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: sPar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: sPar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes sPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes sPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes sPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes sPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes sPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.tPar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: tPar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: tPar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: tPar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: tPar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: tPar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes tPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes tPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes tPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes tPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes tPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.hPar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: hPar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: hPar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: hPar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: hPar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: hPar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes hPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes hPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes hPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes hPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes hPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.bPar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: bPar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: bPar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: bPar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: bPar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: bPar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes bPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes bPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes bPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes bPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes bPar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+.ePar {
+  height: 49%;
+  width: 78%;
+  top: 18%;
+  left: 10%;
+  font-family: akkurat-pro;
+  font-weight: bold;
+  font-size: 1.2vw;
+  animation: ePar ease 1.4s;
+  animation-timing-function: linear;
+  -webkit-animation: ePar ease 1.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation: ePar ease 1.4s;
+  -moz-animation-timing-function: linear;
+  -o-animation: ePar ease 1.4s;
+  -o-animation-timing-function: linear;
+  -ms-animation: ePar ease 1.4s;
+  -ms-animation-timing-function: linear;
+}
+
+@keyframes ePar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-moz-keyframes ePar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-webkit-keyframes ePar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-o-keyframes ePar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}
+
+@-ms-keyframes ePar {
+  from {left: 0; opacity: 0}
+  to {left: 10%; opacity: 1}
+}

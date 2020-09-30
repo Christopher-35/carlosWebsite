@@ -1,0 +1,678 @@
+/* @import './cssFiles/animations.css'; */
+
+/* @font-face {
+  font-family: supria-sans;
+  src: url('../fonts/Supria\ Sans\ Regular.otf');
+}
+
+@font-face {
+    font-family: akkurat-pro;
+    src: url('../fonts/AkkRg_Pro_1.otf')
+} */
+
+
+* {
+  /* margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;  
+  height: 100%;
+  box-sizing: border-box; */
+}
+
+body {
+  /* overflow-x: hidden;
+  height: 100%; */
+}
+
+/*adjust top-left spot of background color to be white*/
+.homeBackground {
+    margin: 0;
+    top: 0px;
+    position: fixed;
+    background-color: #2d5074;
+    min-height: 658px;
+    width: 100vw;
+    height: 00px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top; 
+    z-index: 0;
+}
+
+/* .navbar {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 23%;
+    height: 100%;
+    background: #009879;
+    border-right: 2px solid #008C71;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: right .3s ease-in-out, opacity .7s ease-in-out;
+    z-index: 2 !important;
+  } */
+            /* NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEED*/ 
+  /* .menuIcon {
+    position: fixed;
+    top: 1%;
+    width: 60px;
+    height: 60px;
+    right: 1%;
+    cursor: pointer;
+    z-index: 7;
+    float: right;
+  } */
+
+  /* .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow: hidden;
+  } */
+  
+  /* .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  } */
+  
+  /* .sidenav a:hover {
+    color: #f1f1f1;
+  } */
+  
+  /* .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  } */
+
+              /*    EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEED */
+  
+  /* .navbar--open {
+    right: 0;
+    opacity: 1;
+    z-index: 4 !important;
+  }
+  
+  .navbar__link {
+  
+    background: #008C71;
+    color: white;
+    margin: none;
+    padding: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #009879;
+    z-index: 4 !important;
+
+  }
+  
+  .navbar__link .material-icons {
+    z-index: 4 !important;
+  }
+  
+  .navbar__link:active {
+    background: #007d65;
+  } */
+
+              /* NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+/* .jBrief {
+    position: fixed;
+    font-family: akkurat-pro;
+    color: white;
+    top: 20%;
+    left: 2%;
+    font-size: 4.6vh;
+} */
+
+/* .bold {
+    font-size: 5.2vh;
+} */
+
+              /* EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+
+
+/* .firstHalfOfPage .homeLogo {
+    display: absolute;
+    background-color: #fff;   
+    position: absolute; 
+    top: 0;
+    visibility: visible;
+    z-index: 1;
+   
+} */
+
+
+
+/* .firstHalfOfPage { */
+  /* z-index: 5; */
+    /* position: sticky; */
+    /* display: block;
+    position: fixed; 
+    background-color: #2d5074; 
+    top: 20%;
+    right: 10%;
+    height: 52%;
+    width: 30%;
+    visibility: visible;
+    z-index: 0; */
+/* } */
+
+       /* NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+
+/* .jBrickman {
+  position: fixed;
+  top: 20%;
+  right: 10%;
+  height: 52%;
+  width: 30%;
+  visibility: visible;
+  z-index: 1;
+} */
+
+/* .firstHalfOfPage {
+  position: relative;
+  height: 100%;
+} */
+
+/* .homeLogo {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 17%;
+  height: 10%;
+  cursor: pointer;
+  z-index: 4;
+  background-color: #fff;
+  float: left;
+  border: 1px solid black;
+} */
+
+/* .logo-in-sidebar {
+  top: 1%;
+  left: 8px;
+  position: absolute;
+  width: 82%;
+  height: 10vh;
+}  */
+
+/* .hidden_text {
+  font-size: 20px;
+  left: 0;
+  position: absolute;
+  color: black;
+  top: 11%;
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  height: 3%;
+} */
+
+/* .scroll-pic {
+  position: relative;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 11vh;
+  width: 40%;
+  top: 9%;
+  left: 49%;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+} */
+
+/* .mouse {
+  position: absolute;
+  width: 4vw;
+  height: 7vh;
+  z-index: 3;
+  top: 70vh;
+} */
+
+  /* .botWords {
+    text-align: center;
+    position: fixed;
+    font-family: supria-sans;
+    left: 0%;
+    top: 93%;
+    background: white;
+    width: 100vw;
+  } */
+
+  /* EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+
+
+  /* .parallax {
+    background-image: url('../images/parallax.png');
+
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+  /* NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+
+ 
+  /* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-areas: 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight"
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight"  
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight"  
+    "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight"  
+    "botLeft botLeft botLeft botLeft botMiddle botMiddle botMiddle botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight" 
+    "botLeft botLeft botLeft botLeft botMiddle botMiddle botMiddle botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight"; 
+  } */
+  
+  /* .topLeft { 
+    grid-area: topLeft; 
+    background: #fff;
+    z-index: 3;
+    position: relative;
+  } */
+
+  /* .topLeftHeader {
+    position: absolute;
+    height: 11%;
+    width: 78%;
+    left: 10%;
+    font-family: akkurat-pro;
+    font-size: 3vh;
+    display: table;
+    text-align: left;
+    text-decoration: none;
+    top: 20%;
+    font-weight: bold;
+    padding: 0;
+  } */
+
+  /* .topLeftFounders {
+    height: 5%;
+    width: 78%;
+    top: 18%;
+    left: 10%;
+    color: #3E3E3E;
+    font-family: akkurat-pro;
+    font-size: 1vw;
+    font-style: italic;
+  } */
+
+  /* .topLeftParagraph {
+    height: 49%;
+    width: 78%;
+    top: 18%;
+    left: 10%;
+    font-family: akkurat-pro;
+    font-weight: bold;
+    font-size: 1.2vw;
+  } */
+  
+  /* .topRight { 
+    grid-area: topRight; 
+    z-index: 1;
+    background: white;
+    position: relative;
+  } */
+
+  /* .progress {
+    position: absolute;
+    max-height: inherit;
+    background-color: #007bff;
+    z-index: 2;
+    bottom: 1%;
+    max-height: 1%;
+  } */
+
+  /* EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+
+  /* .ziplyneBig {
+    height: 100%;
+    width: 100%;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  } */
+  
+    /* NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+
+
+  /* .botLeft { 
+    grid-area: botLeft; 
+    background-color: black;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    height: 102%;
+  } */
+
+  /* .botLeftText {
+    height: 39%;
+    width: 70%;
+    display: inline-block;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3vh;
+    font-family: akkurat-pro;
+  } */
+
+  /* .botLeftText::after {
+    border: none;
+  } */
+  
+  /* .botMiddle { 
+    grid-area: botMiddle; 
+    display: flex;
+    justify-content: space-around;
+  } */
+
+  /* .round {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2% 8%;
+    border-radius: 50%;
+    height: 60%;
+    top: 25%;
+    font-weight: bold;
+    font-size: 3vh;
+  } */
+  
+  /* .round:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+  } */
+  
+  /* .previous {
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+  } */
+  
+  /* .next {
+    background-color: #f1f1f1;
+    color: black;
+  } */
+
+  /* .currentPage {
+    top: 42%;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    height: 32%;
+    margin: 0;
+    padding: 0;
+    font-size: 112%;
+  } */
+
+  /* .botRight {
+    grid-area: botRight;
+    position: relative;
+    width: 100%;
+    height: 102%;
+    background: #007bff;
+    overflow: hidden; */
+    /* MIGHT HAVE TO GIVE IT POSITION RELATIVE*/
+  /* } */
+
+  /* .horizontal-scrollbar {
+    height: 30%;
+    width: 101%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: white;
+    
+  }   */
+
+  /* .all-companies {
+    position: absolute;
+    top: -28px;
+    left: 2px;
+    color: white;
+    font-size: 2vh;
+  } */
+  
+  /* .all-companies:hover {
+    color: white;
+  } */
+
+  /* .button-group {
+    position: absolute;
+    max-height: inherit;
+    background: #007bff;
+
+  }  */
+
+  /* .a-button {
+    top: 0;
+    opacity: .4;
+    max-height: inherit;
+    border: none;
+    box-shadow: none;
+  } */
+
+  /* .a-button:focus {
+    background: #007bff;
+    box-shadow: none;
+  } */
+
+  /* .all-companies {
+    top: 2%;
+    font-size: 87%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    max-height: inherit;
+  } */
+
+  /* EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
+
+
+
+/*   
+.swiper-container {
+	width: 100%;
+	height: 50%;
+	min-width: 100%;
+	min-height: 100%;	
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+  grid-area: botRight;
+  width: 100%;
+  height: 100%;
+  this gives the dimension of slider container
+  these values will make the container as big as the parent div
+  overflow: hidden;
+  important parameter to not disrupt the container when slides increases in coverflow and other effect
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	Center slide text vertically
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	min-width: 40%;
+	z-index: 10;
+  background-color: white;
+  width:300px;
+  height:300px;
+  this one holds the dimension of each slides and can be changed according to the user wish
+}
+.swiper-pagination {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+  
+    margin: 0;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	background: #007aff;
+}
+.swiper-pagination-bullet {
+
+	border-radius: 0;
+	width: 32%;
+	height: 100%;
+	text-align: center;
+	line-height: 200px;
+	font-size: 32px;
+	color:#fff;
+	opacity: .61;
+	background: rgba(0,0,0,0);
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+    align-items: stretch;
+}
+
+.bullet-1 {
+	flex: 1;
+	margin: 0;
+	padding:0;
+}
+
+.bullet-2 {
+	flex: 1;
+	margin: 0;
+	padding:0;
+}
+
+.bullet-3 {
+	flex: 1;
+	margin: 0;
+	padding:0;
+}
+
+.swiper-pagination-clickable {
+	margin: 0;
+	padding: 0;
+
+}
+
+.swiper-pagination-bullets {
+	margin: 0;
+	padding: 0;
+}
+
+.swiper-pagination-bullet-active {
+	color:#fff;
+	opacity: 1;
+	background: #007aff;
+}
+
+.swiper-scrollbar {
+	top: 0;
+	color: #fff;
+	scrollbar-color: light;
+	z-index: 3;
+	background: #007aff;
+}
+
+.swiper-scrollbar-drag {
+	color: #fff;
+	scrollbar-color: light;
+	z-index: 3;
+	background: #fff;
+	
+} */
+  
+ 
+  
+  /* For presentation only, no need to copy the code below */
+  .grid-container * { 
+   /* border: 1px solid red; */
+   position: relative;
+  }
+
+  body * {
+    /* border: 1px solid red; */
+  }
+  
+  /* .grid-container *:after { 
+  
+   position: absolute;
+   top: 0;
+   left: 0;
+  } */

@@ -23,7 +23,6 @@ import Col from 'react-bootstrap/Col';
 import langs from './langs.js';
 import SubmitForm from './components/Form';
 import GMap from './gMaps';
-import About from './components/About';
 import Home from './components/Home';
 import Resources from './components/Resources';
 import PracticeAreas from './components/PracticeAreas';
