@@ -138,16 +138,7 @@ class App extends Component {
         return (
         <React.Fragment>
         <BrowserRouter>
-        <Switch>
-
-        <Route path='/' exact render={() => (<Home langs={{...this.state}}/>)} />
-        <Route path='/resources' exact render={() => (<Resources/>)} />
-        <Route path='/practice-areas' exact render={() => (<PracticeAreas/>)}  />
-        {/* <Route to='/' render={() => (<Home langs={{...this.state}}/>)} /> */}
-        <Route path='/#scroll-home' exact  render={() => (<Home langs={{...this.state}}/>)}/>
-        <Route path='/#contact-info' exact  render={() => (<Home langs={{...this.state}}/>)}/> 
-         {/* <Route to='/s' /> */}
-        </Switch>
+        <div>
 
         {/* CONSIDER WRAPPING EVERYTHING IN FLEX CONTAINER */}
        <Navbar id='make_gray' bg="light" expand="lg" fixed='top'>
@@ -179,8 +170,18 @@ class App extends Component {
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
+            <Switch>
+        <Route path='/' exact render={() => (<Home langs={{...this.state}}/>)} />
+        <Route path='/resources' exact render={() => (<Resources/>)} />
+        <Route path='/practice-areas' exact render={() => (<PracticeAreas/>)}  />
+        {/* <Route to='/' render={() => (<Home langs={{...this.state}}/>)} /> */}
+        <Route path='/#scroll-home' exact  render={() => (<Home langs={{...this.state}}/>)}/>
+        <Route path='/#contact-info' exact  render={() => (<Home langs={{...this.state}}/>)}/> 
+         {/* <Route to='/s' /> */}
+        </Switch>
 
             {/* <Home langs={{...this.state}}/> */}
+            </div>
             </BrowserRouter>
         </React.Fragment>
 

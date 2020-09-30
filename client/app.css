@@ -22,11 +22,11 @@
 } */
 
 body {
-  /* overflow-x: hidden; */
   height: 100% !important;
-  width: 100% !important;
-  max-width: 100%;
+  /* width: 100% !important;
+  max-width: 100%; */
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .react-container {

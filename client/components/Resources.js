@@ -207,7 +207,7 @@ render () {
 
 
     return (
-        <div>
+        <React.Fragment>
         {/* <div className='scroll-pic fade-position'><Mouse  className='scroll-pic'/></div> */}
       
         {/* <a href=''> 
@@ -222,17 +222,14 @@ render () {
         <div className='firstHalfOfPage'>     
         {/* <img className='jBrickman' src='jBrickman.png' alt='company ceo'/> */}
         <div className='homeBackground'>
-        {/* <div className='jBrief'>
-        I’m a Growth Company Executive with<b className='bold'> 25 plus
-        <br></br> years of experience</b> starting, leading and <br/> building successful B2B SaaS companies<br/>
-        across a variety of industries. Let’s talk about<br/> your sales and business challenges and how 
-        <br/>I can help you grow your business.
-        </div> */}
-        {/* <p className='botWords'> COMPANY STORIES </p> */}
+        <div className='jBrief'>
+        Below Are the<b className='bold'> Most Relevant Forms </b> for immigration.
+        </div>
+        <div className='botWords'> <p> Scroll Down For Forms </p> </div>
+        </div>
         </div>
 
-        </div>
-          {/* <div className='grid-container'> */}
+          <div className='grid-container'>
           {/* <div className="topLeft"> */}
             {/* <img className={currentLogoCopy} src={`${this.state.currentLogo}`}/>
             <p className={currentDateCopy}>{this.state.currentDates}</p>
@@ -279,9 +276,8 @@ render () {
                 <Button className='all-companies' size='sm'>ALL COMPANIES</Button>
             </ButtonGroup>
             </div>               */}
-          {/* </div> */}
-        </div>
-    )
+          </div>
+        </React.Fragment>    )
 }
 
 }
