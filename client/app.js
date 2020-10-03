@@ -138,7 +138,6 @@ class App extends Component {
         return (
         <React.Fragment>
         <BrowserRouter>
-        <div>
 
         {/* CONSIDER WRAPPING EVERYTHING IN FLEX CONTAINER */}
        <Navbar id='make_gray' bg="light" expand="lg" fixed='top'>
@@ -149,22 +148,22 @@ class App extends Component {
                 &nbsp;&nbsp;&nbsp;&nbsp;<Nav.Link exact onClick={() => this.toggleScroll('home')} className='home-link' as={NavLink} to="/#scroll-home">{this.state.headers[0]}</Nav.Link>
                 <NavDropdown title={this.state.headers[1]} id="basic-nav-dropdown">
                     {/* <NavDropdown.Item>{this.state.practiceDrop[0]}</NavDropdown.Item> */}
-                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[0]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/practice-areas">{this.state.practiceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[1]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/practice-areas">{this.state.practiceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[2]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/practice-areas">{this.state.practiceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} exact to="/practice-areas">{this.state.practiceDrop[3]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/practice-areas">{this.state.practiceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title={this.state.headers[2]} id="basic-nav-dropdown">
-                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[0]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/resources">{this.state.resourceDrop[0]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[1]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/resources">{this.state.resourceDrop[1]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[2]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/resources">{this.state.resourceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} exact to="/resources">{this.state.resourceDrop[3]}</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} exact='true' to="/resources">{this.state.resourceDrop[3]}</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link exact onClick={() => this.toggleScroll('contact')} className='clientPortfolio-link' as={NavLink} to="/#contact-info">{this.state.headers[3]}</Nav.Link>
                 </Nav>
@@ -181,7 +180,6 @@ class App extends Component {
         </Switch>
 
             {/* <Home langs={{...this.state}}/> */}
-            </div>
             </BrowserRouter>
         </React.Fragment>
 

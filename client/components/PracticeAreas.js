@@ -4,15 +4,18 @@ const PracticeAreas = () => {
   console.log('in resources')
   return (
     <React.Fragment>
-    <h1>Practice Areas Page</h1>
-    <br/><br/>
-    <h3>Bullet 6</h3>
-    <br/><br/>
-    <h3>Bullet 5</h3>
-    <br/><br/>
-    <h3>Bullet 4</h3>
-    <br/><br/>
-    <h3>Bullet 3</h3>
+    <br/><br/><br/><br/><br/><br/>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Hello Carlos! This is the Practice Areas Page</h1>
+    <br/><br/><br/><br/>
+    
+    <h2>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Please Let me know what you want me to put here</h2>
+    
     </React.Fragment>
   )
 }

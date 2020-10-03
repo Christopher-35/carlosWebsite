@@ -1,4 +1,4 @@
-/* @import './cssFiles/animations.css'; */
+@import './rAnimations.css';
 
 /* @font-face {
   font-family: supria-sans;
@@ -26,6 +26,101 @@ body {
   /* overflow-x: hidden;
   height: 100%; */
 }
+
+.f_half {
+  width: 99vw;
+  height: 100vh;
+  background-color: lightyellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.s_half {
+  width: 100vw;
+  top: 100vh;
+  height: 89vh;
+  position: relative;
+  /* z-index: 1; */
+  background: white;
+}
+
+.bio {
+  width: 53.5%;
+  height: 88.5%;
+  position: relative;
+  text-align: center;
+  background: hsl(0, 0%, 92%);
+  /* z-index: 1; */
+  overflow-y: auto;
+  top: 1%;
+}
+
+.cover {
+  position: absolute;
+  top: 1%;
+  left: 53.25%;
+  height: 89%;
+  width: 46.25%;
+  /* background: hsl(120, 73%, 85%); */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.footer {
+  height: 11%;
+  font-size: 14px;
+  width: 100vw;
+  align-content: stretch;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  /* z-index: 20; */
+  /* background: hsl(195, 53%, 89%); */
+  overflow-y: auto;
+}
+
+/* .full_height {
+  height: 100% !important;
+  width: 110% !important;
+  position: fixed !important;
+  background: lightpink !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  overflow-y: scroll;
+} */
+
+/* .bottom_half {
+  top: 110%;
+  position: fixed;
+  height: 610px;
+  background: red;
+} */
+
+/* .resource_div {
+  min-height: 1000px !important;
+} */
+
+/* .resource_div * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;  
+  box-sizing: border-box;
+} */
+
+/* .firstHalfOfPage {
+  position: fixed;
+  height: 100%;
+} */
 
 /*adjust top-left spot of background color to be white*/
 .homeBackground {
@@ -258,7 +353,7 @@ body {
     height: 10%;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: auto;
+    z-index: 1 !important;
   }
 
   .botWords p {
@@ -268,6 +363,8 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    z-index: 1 !important;
+
   }
 
   /* EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
@@ -285,12 +382,22 @@ body {
 
   /* NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDdddddddddddddddddddddddddddddddddddddddddddddDDDD */
 
+  .new_grid {
+    position: fixed;
+    top: 111%;
+    height: 100px;
+    width: 100px;
+    z-index: 2 !important;
+  }
  
-  .grid-container {
+  /* .grid-container {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(18, 1fr);
-    z-index: 3;
+    z-index: 2 !important;
+    position: fixed;
+    background: lightpink;
+    top: 10%;
     grid-template-areas: 
     "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
     "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight" 
@@ -310,7 +417,7 @@ body {
     "topLeft topLeft topLeft topLeft topLeft topLeft topLeft topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight topRight"  
     "botLeft botLeft botLeft botLeft botMiddle botMiddle botMiddle botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight" 
     "botLeft botLeft botLeft botLeft botMiddle botMiddle botMiddle botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight botRight"; 
-  }
+  } */
   
   /* .topLeft { 
     grid-area: topLeft; 
@@ -319,7 +426,7 @@ body {
     position: relative;
   } */
 
-  /* .topLeftHeader {
+  .topLeftHeader {
     position: absolute;
     height: 11%;
     width: 78%;
@@ -332,7 +439,195 @@ body {
     top: 20%;
     font-weight: bold;
     padding: 0;
+  }
+
+  .tl_logo {
+    position: absolute;
+    top: 3%;
+    height: 11%;
+    width: 48%;
+    display: block;
+    margin: auto;
+  }
+
+  ._founded {
+    position: absolute;
+    top: 16%;
+    height: 11%;
+    display: block;
+    margin: auto;
+  }
+
+  ._founders {
+    position: absolute;
+    height: 5%;
+    top: 29%;
+  }
+
+  ._paragraph {
+    position: absolute;
+    top: 36%;
+    height: 49%;
+  }
+
+  ._background {
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    z-index: 1 !important;
+  }
+
+  ._progress {
+    position: absolute;
+    top: 98%;
+    left: 0%;
+    height: 1%;
+    width: 100.5%;
+    z-index: 1;
+    background: #007bff;
+  }
+
+  ._botleft {
+    position: absolute;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: black;
+    color: white;
+  }
+
+  ._botlefttext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150%;
+  }
+
+  ._botmiddle {
+    position: absolute;
+    left: 25%;
+    width: 28.75%;
+    height: 100%;
+    background: lightgrey;
+  }
+
+  .round {
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2% 8%;
+    border-radius: 50%;
+    height: 80%;
+    width: 10%;
+    top: 10%;
+    font-weight: bold;
+    /* font-size: 3vh; */
+    font-size: 190%;
+  }
+  
+  .round:hover {
+    position: absolute;
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .previous {
+    position: absolute;
+    left: 20%;
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .next {
+    position: absolute;
+    right: 20%;
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+  .currentPage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 2;
+    font-weight: bold;
+    height: 40%;
+    font-size: 132%;
+  }
+
+  ._botright {
+    position: absolute;
+    left: 53.25%;
+    width: 46% !important;
+    height: 100%;
+    background: #007bff;
+  }
+
+  ._bgroup {
+    height: 100% !important;
+    width: 100%;
+  }
+
+  ._button {
+    position: absolute;
+    left: 0;
+    padding-top: 1%;
+    height: 100%;
+    font-size: 96%;
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+    /* width: 20%; */
+    /* top: 70% !important; */
+    /* line-height: 30% !important; */
+  }
+
+  /* .all-companies {
+    position: absolute;
+    top: -28px;
+    left: 2px;
+    color: white;
+    font-size: 2vh;
   } */
+  
+  /* .all-companies:hover {
+    color: white;
+  } */
+                              /* A BUTTON AND BUTTON GROUP */
+  /* .button-group {
+    position: absolute;
+    max-height: inherit;
+    background: #007bff;
+    width: 40% !important;
+    height: 100%;
+  }  */
+
+  /* .a-button {
+    top: 0;
+    opacity: .4;
+    max-height: inherit;
+    border: none;
+    box-shadow: none;
+    width: 35% !important;
+  } */
+
+  /* .a-button:focus {
+    background: #007bff;
+    box-shadow: none;
+  } */
+
+  /* .all-companies {
+    top: 2%;
+    font-size: 87%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    max-height: inherit;
+  } */
+
 
   /* .topLeftFounders {
     height: 5%;
@@ -676,12 +971,12 @@ body {
   
   /* For presentation only, no need to copy the code below */
   .grid-container * { 
-   border: 1px solid red;
+   /* border: 1px solid red; */
    position: relative;
   }
 
   body * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   
   /* .grid-container *:after { 

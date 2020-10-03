@@ -208,6 +208,7 @@ render () {
 
     return (
         <React.Fragment>
+        {/* <div className='resource_div'> */}
         {/* <div className='scroll-pic fade-position'><Mouse  className='scroll-pic'/></div> */}
       
         {/* <a href=''> 
@@ -216,20 +217,91 @@ render () {
         {/* <a>
         <img className='menuIcon' src='hamburger.png' onClick={this.toggleNav}  />
         </a> */}
+
+        <div className='f_half'></div>
+        <div className='s_half'>
+            <div className='bio'>
+                <img className={`${currentLogoCopy} tl_logo`} src={`${this.state.currentLogo}`}/>
+                <p className={`${currentDateCopy} _founded`}>{this.state.currentDates}</p>
+                <p className={`${currentFounder} _founders`}>{this.state.currentFounders}</p>
+                <p className={`${onlyBio} _paragraph`}>
+                {this.state.currentBio}
+                </p>
+            </div>
+            <div className='cover'>
+                <img className={`${currentImgCopy} _background`} src={`${this.state.currentImage}`}/>
+                <ProgressBar className='_progress'>
+                <ProgressBar style={{backgroundColor: this.state.progressColor[0]}} className='ziplyne' now={10} key={1} />
+                <ProgressBar style={{backgroundColor: this.state.progressColor[1]}} now={9} key={2} />
+                <ProgressBar style={{backgroundColor: this.state.progressColor[2]}} now={8} key={3} />
+                <ProgressBar style={{backgroundColor: this.state.progressColor[3]}} now={14} key={4} />
+                <ProgressBar style={{backgroundColor: this.state.progressColor[4]}} now={10} key={5} />
+                <ProgressBar style={{backgroundColor: this.state.progressColor[5]}} now={7} key={6} />
+                <ProgressBar style={{backgroundColor: this.state.progressColor[6]}} now={13} key={7} />
+                <ProgressBar style={{backgroundColor: this.state.progressColor[7]}} now={15} key={8} />
+                </ProgressBar>
+            </div>
+            <div className='footer'>
+                <div className='_botleft'>
+                    <p className='_botlefttext'>Meet The Team</p>
+                </div>
+                <div className='_botmiddle'>
+                    <a onClick={()=> this.prevButtonClick()} className="previous round">&#8249;</a>
+                    <p className='currentPage'>0{this.state.currentPage[0]} / 08</p>
+                    <a onClick={()=> this.nextButtonClick()} className="next round">&#8250;</a>
+                </div>
+                <div className="_botright">
+                <ButtonGroup size='sm' className='_bgroup' aria-label="Basic example">
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[0]}} onClick={()=> this.onButtonClick(0)} >Ziplyne</Button>
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[1]}} onClick={()=> this.onButtonClick(1)} >Jabord</Button>
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[2]}} onClick={()=> this.onButtonClick(2)} >Jinglz</Button>
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[3]}} onClick={()=> this.onButtonClick(3)} >SemanticMD</Button>
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[4]}} onClick={()=> this.onButtonClick(4)} >TalkBox</Button>
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[5]}} onClick={()=> this.onButtonClick(5)} >H1.</Button>
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[6]}} onClick={()=> this.onButtonClick(6)} >BMS Capital</Button>
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[7]}} onClick={()=> this.onButtonClick(7)} >equities.com</Button>                    
+                    <Button className='_button' style={{opacity: this.state.buttonOpacity[7]}} /*onClick={()=> this.onButtonClick(7)}*/ >ALL Forms</Button>
+                </ButtonGroup>
+                </div>   
+                {/* <ButtonGroup className='button-group' aria-label="Button Group">
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[0]}} onClick={()=> this.onButtonClick(0)} >Ziplyne</Button>
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[1]}} onClick={()=> this.onButtonClick(1)} >Jabord</Button>
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[2]}} onClick={()=> this.onButtonClick(2)} >Jinglz</Button>
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[3]}} onClick={()=> this.onButtonClick(3)} >SemanticMD</Button>
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[4]}} onClick={()=> this.onButtonClick(4)} >TalkBox</Button>
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[5]}} onClick={()=> this.onButtonClick(5)} >H1.</Button>
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[6]}} onClick={()=> this.onButtonClick(6)} >BMS Capital</Button>
+                    <Button className='a-button' style={{opacity: this.state.buttonOpacity[7]}} onClick={()=> this.onButtonClick(7)} >equities.com</Button>
+                    <Button className='all-companies' size='sm'>ALL COMPANIES</Button>
+                </ButtonGroup> */}     
+            </div>
+        </div>
+
+        {/* <div className='bottom_half'>
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        </div> */}
         
         
        
-        <div className='firstHalfOfPage'>     
+        {/* <div className='firstHalfOfPage'>      */}
         {/* <img className='jBrickman' src='jBrickman.png' alt='company ceo'/> */}
-        <div className='homeBackground'>
+
+        {/* <div className='homeBackground'>
         <div className='jBrief'>
         Below Are the<b className='bold'> Most Relevant Forms </b> for immigration.
         </div>
         <div className='botWords'> <p> Scroll Down For Forms </p> </div>
         </div>
-        </div>
+        </div> */}
 
-          <div className='grid-container'>
+        {/* <div className='new_grid'>
+        </div> */}
+
+          {/* <div className='grid-container'> */}
+          
+
           {/* <div className="topLeft"> */}
             {/* <img className={currentLogoCopy} src={`${this.state.currentLogo}`}/>
             <p className={currentDateCopy}>{this.state.currentDates}</p>
@@ -276,8 +348,10 @@ render () {
                 <Button className='all-companies' size='sm'>ALL COMPANIES</Button>
             </ButtonGroup>
             </div>               */}
-          </div>
-        </React.Fragment>    )
+            {/* </div> */}
+            {/* </div> */}
+            </React.Fragment>
+        )
 }
 
 }

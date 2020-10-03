@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useState, useEffect} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -7,8 +7,9 @@ import regeneratorRuntime from "regenerator-runtime";
 import { HeatmapLayer } from '@react-google-maps/api';
 import { set } from 'date-fns';
 import './form.css';
+import axios from 'axios';
 
-const SubmitForm = ({ formData, formMute }) => {
+const SubmitForm = ( { formData, formMute} ) => {
 
   const [fullNameInput, setFullNameInput] = useState("");
   const [nameMIndex, setNameMIndex] = useState(0);
@@ -30,6 +31,7 @@ const SubmitForm = ({ formData, formMute }) => {
   const [messageMIndex, setMessageMIndex] = useState(9);
   const [canSubmitMessage, setCanSubmitMessage] = useState(false);
   const [messageStatus, setMessageStatus] = useState(0);
+  const [finalMSubmit, setFinalMSubmit] = useState(false);
 
 
   // const [canSubmitInput, setCanSubmitInput] = useState(false);
@@ -40,10 +42,17 @@ const SubmitForm = ({ formData, formMute }) => {
   const [submitColor, setSubmitColor] = useState("#dc3545");
   // const [langsMuted, setLangsMuted] = useState([formData[2], formData[7], formData[12]], formData[17])
 
+  // useEffect(() => {
+  //   if (canSubmitMessage){
+  //   setFinalMSubmit(true);
+  //   }
+  // }, [canSubmitMessage]);
+
   const nameOnChange = (e) => {
     try {
     console.log('props', langs);
     setFullNameInput(e.target.value);
+  
     // const regName = new RegExp(/^[a-z ,.'-]+$/i);
     // let regName = "^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$";
       let regName = /\w+\s\w+/;
@@ -151,27 +160,53 @@ const SubmitForm = ({ formData, formMute }) => {
   const messageOnChange = (e) => {
     try {
       setMessageInput(e.target.value);
-        if (e.target.value.length === 0 ){
-        setMessageStatus(0);
-        setMessageMIndex(9);
-        setCanSubmitMessage(false)
+      let mCopy = e.target.value.slice();
+      if (mCopy.length > 19 && mCopy.length < 1001){
+        setCanSubmitMessage(true);  
+        if (canSubmitName && canSubmitEmail && canSubmitNumber){
+          setIsValidated(true);
         }
-        else if (e.target.value.length < 20 || e.target.value.length > 1000) {
+        setMessageStatus(2);
+        setMessageMIndex(11);
+        // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+        // console.log('msgLength', mCopy.length);
+        console.log('canSubmitMessage=', canSubmitMessage);
+      } else if (mCopy.length < 20 && mCopy.length > 0){
         setMessageStatus(1);
         setMessageMIndex(10);
         setCanSubmitMessage(false);
-        // console.error('error bc you typed in', e.target.value);
-        } else {
-        // console.log('position', e.target.value.indexOf(' '));
-        setMessageStatus(2);
-        setMessageMIndex(11);
-        setCanSubmitMessage(true);  
-        console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
-
-        if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
-          setIsValidated(true);
-        }
+      } else if (mCopy.length > 1000){
+        setMessageStatus(1);
+        setMessageMIndex(10);
+        setCanSubmitMessage(false);
+      } else if (mCopy.length === 0){
+        setMessageStatus(0);
+        setMessageMIndex(9);
+        setCanSubmitMessage(false)
       }
+      // let msg = messageInput;
+      //   if (e.target.value.length === 0 ){
+      //   setMessageStatus(0);
+      //   setMessageMIndex(9);
+      //   setCanSubmitMessage(false)
+      //   }
+      //   else if (e.target.value.length <= 20 || e.target.value.length > 1000) {
+      //   setMessageStatus(1);
+      //   setMessageMIndex(10);
+      //   setCanSubmitMessage(false);
+      //   // console.error('error bc you typed in', e.target.value);
+      //   } else {
+      //   // console.log('position', e.target.value.indexOf(' '));
+        
+      //   setCanSubmitMessage(true);  
+      //   setMessageStatus(2);
+      //   setMessageMIndex(11);
+      //   console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+      //   console.log('msgLength', e.target.value.length);
+      //   if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
+      //     setIsValidated(true);
+      //   }
+      // }
     } catch (err) {
       console.error('err=', err.message);
     }
