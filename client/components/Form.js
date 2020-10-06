@@ -26,7 +26,6 @@ const SubmitForm = ( { formData, formMute} ) => {
   const [canSubmitNumber, setCanSubmitNumber] = useState(false);
   const [numberStatus, setNumberStatus] = useState(0);
 
-
   const [messageInput, setMessageInput] = useState("");
   const [messageMIndex, setMessageMIndex] = useState(9);
   const [canSubmitMessage, setCanSubmitMessage] = useState(false);
@@ -50,14 +49,14 @@ const SubmitForm = ( { formData, formMute} ) => {
 
   const nameOnChange = (e) => {
     try {
-    console.log('props', langs);
+    // console.log('props', langs);
     setFullNameInput(e.target.value);
   
     // const regName = new RegExp(/^[a-z ,.'-]+$/i);
     // let regName = "^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$";
       let regName = /\w+\s\w+/;
       if (e.target.value.length === 0 || !/\S/.test(e.target.value)){
-      console.log('length=', e.target.value.length);
+      // console.log('length=', e.target.value.length);
       setNameStatus(0);
       setNameMIndex(0);
       setCanSubmitName(false); 
@@ -78,7 +77,7 @@ const SubmitForm = ( { formData, formMute} ) => {
       setNameStatus(2);
       setNameMIndex(2);
       setCanSubmitName(true);  
-      console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+      // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
 
       if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
         setIsValidated(true);
@@ -111,7 +110,7 @@ const SubmitForm = ( { formData, formMute} ) => {
         setEmailStatus(2);
         setEmailMIndex(5);
         setCanSubmitEmail(true);  
-        console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+        // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
 
         if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
           setIsValidated(true);
@@ -124,13 +123,13 @@ const SubmitForm = ( { formData, formMute} ) => {
 
   const numberOnChange = (e) => {
     try {
-      console.log('typeof', typeof e.target.value);
+      // console.log('typeof', typeof e.target.value);
       setNumberInput(e.target.value);
       let copy = e.target.value.slice();
       copy = copy.replace(/[-# ]/g, "");
       let regNum = /^\d+$/;
       // copy = copy.replace(/ /g,'')
-      console.log('copy=', copy, 'length=', copy.length);
+      // console.log('copy=', copy, 'length=', copy.length);
         if (e.target.value.length === 0 ){
         setNumberStatus(0);
         setNumberMIndex(6);
@@ -146,7 +145,7 @@ const SubmitForm = ( { formData, formMute} ) => {
         setNumberStatus(2);
         setNumberMIndex(8);
         setCanSubmitNumber(true);  
-        console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
+        // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
 
         if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
           setIsValidated(true);
@@ -170,7 +169,7 @@ const SubmitForm = ( { formData, formMute} ) => {
         setMessageMIndex(11);
         // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
         // console.log('msgLength', mCopy.length);
-        console.log('canSubmitMessage=', canSubmitMessage);
+        // console.log('canSubmitMessage=', canSubmitMessage);
       } else if (mCopy.length < 20 && mCopy.length > 0){
         setMessageStatus(1);
         setMessageMIndex(10);
@@ -232,11 +231,13 @@ const SubmitForm = ( { formData, formMute} ) => {
         "message": messageInput
 
       };
-      const response = await fetch("http://localhost:5000", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(body)
-      });
+      // const response = await fetch("http://localhost:5000", {
+      //   method: "POST",
+      //   headers: {"Content-Type": "application/json"},
+      //   body: JSON.stringify(body)
+      // });
+
+      const response = await axios.post("http://localhost:5000", body);
       console.log('response', response);
     
       }

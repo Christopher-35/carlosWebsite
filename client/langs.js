@@ -36,6 +36,18 @@ langs.introParagraphSp = [
   'En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol En Espanol.'
 ];
 
+// CONTACTINFO
+  langs.contactEn = [
+    'Contact Information:', "Address: ", "305 Broadway Suite 1001 New York, NY 10007", 
+    "Tel: ", "1-917-402-7410", "Fax: ", "1-646-304-9247"
+  ]
+
+  langs.contactSp = [
+    'Informacion del contacto:', "Direccion: ", "305 Broadway Suite 1001 New York, NY 10007",
+    "Tel: ", "1-917-402-7410", "Fax: ", "1-646-304-9247"
+  ]
+//
+
 langs.formEn = [
   'Full Name', 'John Doe', 'Please include a single space', 'Please include a single space  ❌', 'Looks Good!  ✔️',
   'Email Adress', 'jdoe@example.com', "We'll never share your email with anyone else.", 'Please provide a valid email address  ❌', 'Looks Good!  ✔️',

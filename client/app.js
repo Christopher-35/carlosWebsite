@@ -43,6 +43,7 @@ class App extends Component {
           resourceDrop : langs.resourcesEn,
           introTitles: langs.introTitlesEn,
           introParagraphs: langs.introParagraphEn,
+          contactInfo: langs.contactEn,
           formData: langs.formEn,
           formMute: langs.muteEn,
           showInfo: null
@@ -75,7 +76,7 @@ class App extends Component {
     
 
     toggleLanguage () {
-      let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs, newForms, newMutes;
+      let newLang, newHeader, newPractice, newResource, newTitles, newParagraphs, newForms, newMutes, newContact;
       if (this.state.currentLang === this.spanish){
         // newLang = this.english;
         // newHeader = langs.headersEn;
@@ -91,6 +92,7 @@ class App extends Component {
         newParagraphs = langs.introParagraphSp;
         newForms = langs.formSp;
         newMutes = langs.muteSp;
+        newContact = langs.contactSp;
       } else {
         // newLang = this.spanish;
         // newHeader = langs.headersSp;
@@ -107,6 +109,7 @@ class App extends Component {
         newParagraphs = langs.introParagraphEn;
         newForms = langs.formEn;
         newMutes = langs.muteEn;
+        newContact = langs.contactEn;
       }
       this.toggleScroll(null);
       this.setState({
@@ -117,7 +120,8 @@ class App extends Component {
         introTitles: newTitles,
         introParagraphs: newParagraphs,
         formData: newForms,
-        formMute: newMutes
+        formMute: newMutes,
+        contactInfo: newContact
       })
       // console.log('state', [...this.state]);
     }
@@ -169,6 +173,25 @@ class App extends Component {
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
+            <div className='_botNav'>
+              <div>
+                <b style={{letterSpacing: '.75px'}}>{this.state.contactInfo[1]}&nbsp;</b> 
+                {this.state.contactInfo[2]}
+              </div>
+              <div>
+                <b style={{letterSpacing: '.75px'}}>{this.state.contactInfo[3]}&nbsp;</b> 
+                {this.state.contactInfo[4]}
+              </div>
+              <div>
+                <b style={{letterSpacing: '.75px'}}>{this.state.contactInfo[5]}&nbsp;</b> 
+                {this.state.contactInfo[6]}
+              </div>
+
+              {/* <div className='_address'><p className='_atext'>Address:  
+305 Broadway Suite 1001 New York, NY 10007</p></div> */}
+              {/* <p className='_phone'>phone</p>
+              <p className='_fax'>fax</p> */}
+              </div>
             <Switch>
         <Route path='/' exact render={() => (<Home langs={{...this.state}}/>)} />
         <Route path='/resources' exact render={() => (<Resources/>)} />

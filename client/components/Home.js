@@ -68,6 +68,7 @@ const scrollToTop = () => window.scrollTo(0, 0);
  
   return (
     <React.Fragment>
+      <div className='_hbackground'>
       {/* {console.log('state', langs)} */}
 
            <div id="scroll-home" className='about-me'>
@@ -100,14 +101,38 @@ const scrollToTop = () => window.scrollTo(0, 0);
        {/* <GMap className='GMap'></GMap> */}
      </div>
     
-     <div ref={myRef} id='contact-info' className='contactInfo'> 
-       <p className='info1'>Contact Information:</p>
-       <p className='info2'>
-         <b className='bold_word'>Address:&nbsp;</b> 305 Broadway Suite 1001 New York, NY 10007
-       </p>
-       <p className='info3'> <b className='bold_word'>Tel:&nbsp;</b> 1-917-402-7410 </p>
-       <p className='info4'><b className='bold_word'>Fax:&nbsp;</b> 1-646-304-9247 </p>
-     </div>
+    <div ref={myRef} id='contact-info' className='contactInfo'> 
+      <div className='_contact1'>{langs.contactInfo[0]}</div>
+      <div className='_contact2'>
+      <p >
+        <b style={{letterSpacing: '1px'}}>{langs.contactInfo[1]}&nbsp;</b> 
+        {langs.contactInfo[2]}
+      </p>
+      <p > 
+        <b style={{letterSpacing: '1px'}}>{langs.contactInfo[3]}&nbsp;</b> 
+        {langs.contactInfo[4]}
+      </p>
+      <p>
+        <b style={{letterSpacing: '1px'}}>{langs.contactInfo[5]}&nbsp;</b> 
+        {langs.contactInfo[6]} 
+        </p>
+      </div>
+
+      {/* <p className='info1'>{langs.contactInfo[0]}</p>
+      <p className='info2'>
+        <b className='bold_word'>{langs.contactInfo[1]}&nbsp;</b> 
+        {langs.contactInfo[2]}
+      </p>
+      <p className='info3'> 
+        <b className='bold_word'>{langs.contactInfo[3]}&nbsp;</b> 
+        {langs.contactInfo[4]}
+      </p>
+      <p className='info4'>
+        <b className='bold_word'>{langs.contactInfo[5]}&nbsp;</b> 
+        {langs.contactInfo[6]} 
+      </p> */}
+    </div>
+    </div>
     </React.Fragment>
   )
  

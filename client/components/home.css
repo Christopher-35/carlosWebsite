@@ -1,3 +1,11 @@
+/* ._hbackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: yellow !important;
+  z-index: -1;
+} */
+
 .lang_button {
   /* background-color: hsl(24, 72%, 52%); */
   background-color: hsl(24, 99%, 62%);
@@ -98,7 +106,7 @@
 .about-me {
   display: flex;
   position: absolute;
-  top: 16%;
+  top: 46%;
   left: .5%;
   width: 99%;
   height: 69%;
@@ -218,7 +226,7 @@
 .passport_gavel {
   position: absolute;
   left: .5%;
-  top: 86%;
+  top: 116%;
   width: 99%;
   height: 112.9%;
 }
@@ -227,7 +235,7 @@
 
 .home-clients {
   position: absolute;
-  top: 200%;
+  top: 230%;
   left: .5%;
   width: 99%;
   height: 96%;
@@ -250,7 +258,7 @@
 
 .submit_div {
   position: absolute;
-  top: 298%;
+  top: 328%;
   left: .5%;
   background: lightblue;
   width: 99%;
@@ -355,7 +363,38 @@
   height: 16%;
 }
 
-.info1 {
+._contact1 {
+  position: absolute;
+  top: 6%;
+  height: 32%;
+  width: 100%;
+  /* background: lightsalmon; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: white;
+  font-size: 140%;
+  font-weight: bold;
+  /* letter-spacing: 2px; */
+  letter-spacing: 2.2px;
+  font-size: 170%;
+}
+
+._contact2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 48%;
+  /* background: lightpink; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: white;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+/* .info1 {
   color: white;
   position: absolute;
   font-size: 140%;
@@ -378,7 +417,8 @@
   top: 78%;
   transform: translate(-8%, -78%);
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .info3 {
@@ -406,9 +446,8 @@
   display: flex;
   justify-content: center;
   white-space: nowrap;
-}
+} */
 
 .bold_word {
-  /* font-size: 120%; */
-  font-size: 100%;
+  /*font-size*/
 }
