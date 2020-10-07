@@ -63,11 +63,19 @@ const scrollToTop = () => window.scrollTo(0, 0);
     } else if (langs.showInfo === 'home') {
       scrollToTop();
     }
+
+    document.body.style.background = "url('./passport.jpg') center center fixed";
+    document.body.style.webkitBackgroundSize = "cover";
+    document.body.style.mozBackgroundSize = "cover";
+    document.body.style.oBackgroundSIze = "cover";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.opacity = ".9";
+
+    
    
   }, ) 
  
   return (
-    <React.Fragment>
       <div className='_hbackground'>
       {/* {console.log('state', langs)} */}
 
@@ -86,7 +94,7 @@ const scrollToTop = () => window.scrollTo(0, 0);
        </div>
      </div>
 
-     <img className='passport_gavel' src='passport.jpg' alt='passport and gavel'></img>
+     {/* <img className='passport_gavel' src='passport.jpg' alt='passport and gavel'></img> */}
 
      <div className='home-clients'>
        <img className='cool_logo' src='carlos.jpg' alt='logo' />
@@ -133,7 +141,6 @@ const scrollToTop = () => window.scrollTo(0, 0);
       </p> */}
     </div>
     </div>
-    </React.Fragment>
   )
  
 

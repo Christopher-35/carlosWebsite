@@ -1,9 +1,28 @@
+body {
+  height: 100% !important;
+  /* background: url('../../public/passport.jpg')  no-repeat center center fixed !important;
+  -webkit-background-size: cover !important; */
+  /* -moz-background-size: cover !important; */
+  /* -o-background-size: cover !important; */
+  /* background-size: cover !important; */
+  /* opacity: .9; */
+}
+
 /* ._hbackground {
+  height: 100% !important;
   position: absolute;
-  width: 100%;
+  top: 0vh;
+  bottom: 0vh;
   height: 100%;
-  background: yellow !important;
   z-index: -1;
+  width: 100%;
+  background: yellow;
+  background: url('../../public/passport.jpg')  no-repeat center center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  opacity: .9;
 } */
 
 .lang_button {
@@ -223,13 +242,13 @@
 }
 
 
-.passport_gavel {
+/* .passport_gavel {
   position: absolute;
   left: .5%;
   top: 116%;
   width: 99%;
   height: 112.9%;
-}
+} */
 
 /*                  Companies On HomePage Section       */
 
