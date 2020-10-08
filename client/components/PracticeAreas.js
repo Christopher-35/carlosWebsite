@@ -6,11 +6,11 @@ const PracticeAreas = () => {
   useEffect ( () => {
   
     document.body.style.background = "white center center";
-    document.body.style.webkitBackgroundSize = "cover";
-    document.body.style.mozBackgroundSize = "cover";
-    document.body.style.oBackgroundSIze = "cover";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.opacity = ".9";
+    // document.body.style.webkitBackgroundSize = "cover";
+    // document.body.style.mozBackgroundSize = "cover";
+    // document.body.style.oBackgroundSIze = "cover";
+    // document.body.style.backgroundSize = "cover";
+    // document.body.style.opacity = ".9";
    
   }, ) 
   return (

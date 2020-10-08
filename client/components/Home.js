@@ -65,11 +65,11 @@ const scrollToTop = () => window.scrollTo(0, 0);
     }
 
     document.body.style.background = "url('./passport.jpg') center center fixed";
-    document.body.style.webkitBackgroundSize = "cover";
-    document.body.style.mozBackgroundSize = "cover";
-    document.body.style.oBackgroundSIze = "cover";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.opacity = ".9";
+    // document.body.style.webkitBackgroundSize = "cover";
+    // document.body.style.mozBackgroundSize = "cover";
+    // document.body.style.oBackgroundSIze = "cover";
+    // document.body.style.backgroundSize = "cover";
+    // document.body.style.opacity = ".9";
 
     
    

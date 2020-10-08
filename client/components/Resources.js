@@ -42,6 +42,11 @@ class Resources extends Component {
 
 }
 
+componentDidMount () {
+    document.body.style.background = "white center center";
+
+}
+
 
 toggleNav () {
     document.querySelector('.navbar').classList.toggle('navbar--open');

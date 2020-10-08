@@ -126,6 +126,14 @@ class App extends Component {
       // console.log('state', [...this.state]);
     }
 
+    // componentDidMount () {
+    //   document.body.style.webkitBackgroundSize = "cover";
+    //   document.body.style.mozBackgroundSize = "cover";
+    //   document.body.style.oBackgroundSIze = "cover";
+    //   document.body.style.backgroundSize = "cover";
+    //   document.body.style.opacity = ".9";
+    // }
+
     //make ur own file for navbar
     
     render () {
@@ -139,7 +147,18 @@ class App extends Component {
             height: '800',
             border: '0'
         }
+        // document.body.style.webkitBackgroundSize = "cover";
+        // document.body.style.mozBackgroundSize = "cover";
+        // document.body.style.oBackgroundSIze = "cover";
+        // document.body.style.backgroundSize = "cover";
+        // document.body.style.opacity = ".9";
+
         return (
+        // {document.body.style.webkitBackgroundSize = "cover"}
+        // document.body.style.mozBackgroundSize = "cover";
+        // document.body.style.oBackgroundSIze = "cover";
+        // document.body.style.backgroundSize = "cover";
+        // document.body.style.opacity = ".9";
         <React.Fragment>
         <BrowserRouter>
 
@@ -167,7 +186,9 @@ class App extends Component {
                     <NavDropdown.Divider />
                     <NavDropdown.Item as={Link} exact='true' to="/resources">{this.state.resourceDrop[2]}</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} exact='true' to="/resources">{this.state.resourceDrop[3]}</NavDropdown.Item>
+                    {/* <NavDropdown.Item as={Link} exact='true' to="/resources">{this.state.resourceDrop[3]}</NavDropdown.Item> */}
+                    <NavDropdown.Item active={false} href='https://www.uscis.gov/forms/all-forms' target="_blank">ALL FORMS</NavDropdown.Item>
+
                 </NavDropdown>
                 <Nav.Link exact onClick={() => this.toggleScroll('contact')} className='clientPortfolio-link' as={NavLink} to="/#contact-info">{this.state.headers[3]}</Nav.Link>
                 </Nav>
