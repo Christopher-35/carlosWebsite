@@ -26,6 +26,7 @@ body {
   /* overflow-x: hidden;
   height: 100%; */
 }
+@media (min-width: 992px) {
 
 .f_half {
   width: 99vw;
@@ -47,8 +48,9 @@ body {
 }
 
 .bio {
+  top: 10% !important;
   width: 53.5%;
-  height: 88.5%;
+  height: 79.5%;
   position: relative;
   text-align: center;
   background: hsl(0, 0%, 92%);
@@ -59,9 +61,10 @@ body {
 
 .cover {
   position: absolute;
-  top: 1%;
+  top: 10% !important;
   left: 53.25%;
-  height: 89%;
+  height: 80%;
+  /* height: 89%; */
   width: 46.25%;
   /* background: hsl(120, 73%, 85%); */
   overflow-y: auto;
@@ -483,7 +486,7 @@ body {
     left: 0%;
     height: 1%;
     width: 100.5%;
-    z-index: 1;
+    z-index: 2;
     background: #007bff;
   }
 
@@ -584,6 +587,12 @@ body {
     /* top: 70% !important; */
     /* line-height: 30% !important; */
   }
+
+}
+
+  /* .progress-bar {
+    z-index: 4 !important;
+  } */
 
   /* .all-companies {
     position: absolute;

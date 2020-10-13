@@ -25,8 +25,26 @@ body {
   opacity: .9;
 } */
 
+/* .navbar-brand {
+  z-index: 2 !important;
+} */
+@media (min-width: 992px) {
+
+
+.mr-auto {
+  background: #DCDCDC !important;
+  width: 100vw !important;
+  /* margin-left: 2% !important; */
+}
+
+.navbar-brand {
+  z-index: 1;
+}
+
+
 .lang_button {
   /* background-color: hsl(24, 72%, 52%); */
+  
   background-color: hsl(24, 99%, 62%);
   /* border: 1px solid black; */
   border-radius: 15px;
@@ -36,7 +54,7 @@ body {
   width: 120%;
   /* height: 20% !important; */
   padding: .2rem 1rem;
-
+  /* z-index: 2 !important; */
 }
 
 .lang_button:hover {
@@ -412,6 +430,9 @@ body {
   font-size: 140%;
   font-weight: bold;
 }
+
+}
+
 
 /* .info1 {
   color: white;

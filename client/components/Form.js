@@ -38,7 +38,8 @@ const SubmitForm = ( { formData, formMute} ) => {
   const [isValidated, setIsValidated] = useState(false);
   const [disableAllButtons, setDisableAllButtons] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
-  const [submitColor, setSubmitColor] = useState("#dc3545");
+  // const [submitColor, setSubmitColor] = useState("#fff");
+  const [submitBackground, setSubmitBackground] = useState("#dc3545"); //#dc3545
   // const [langsMuted, setLangsMuted] = useState([formData[2], formData[7], formData[12]], formData[17])
 
   // useEffect(() => {
@@ -79,7 +80,7 @@ const SubmitForm = ( { formData, formMute} ) => {
       setCanSubmitName(true);  
       // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
 
-      if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
+      if (canSubmitEmail && canSubmitNumber && canSubmitMessage){
         setIsValidated(true);
       }
     }
@@ -112,7 +113,7 @@ const SubmitForm = ( { formData, formMute} ) => {
         setCanSubmitEmail(true);  
         // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
 
-        if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
+        if (canSubmitName && canSubmitNumber && canSubmitMessage){
           setIsValidated(true);
         }
       }
@@ -147,7 +148,7 @@ const SubmitForm = ( { formData, formMute} ) => {
         setCanSubmitNumber(true);  
         // console.log('namestatus=', canSubmitName, 'emailstatus=', canSubmitEmail, 'numberstatus=', canSubmitNumber, 'messageStatus=', canSubmitMessage);
 
-        if (canSubmitName && canSubmitEmail && canSubmitNumber && canSubmitMessage){
+        if (canSubmitName && canSubmitEmail && canSubmitMessage){
           setIsValidated(true);
         }
       }
@@ -217,12 +218,14 @@ const SubmitForm = ( { formData, formMute} ) => {
     try {
       // e.currentTarget.checkValidity();
       if (!isValidated){
+        setSubmitBackground(`#dc3545`)
         setSubmitMessage('Please fill out all forms correctly')
       } else {
       
         //  CREATE IF STATEMENT FOR ISVALIDATED VAR
       setDisableAllButtons(true);
-      setSubmitColor('hsl(134, 61%, 31%)')
+      setSubmitBackground('#1f7f35');
+      // setSubmitColor('hsl(134, 61%, 31%)')
       setSubmitMessage('Submission Successful! If you want to re-submit, please refresh the page');
       const body = { 
         "fullname": fullNameInput,
@@ -323,7 +326,7 @@ const SubmitForm = ( { formData, formMute} ) => {
       </Form.Group>
       
       <Button disabled={disableAllButtons} variant="success" type="submit">{formData[20]}</Button> 
-      &nbsp;&nbsp;&nbsp;&nbsp;<Form.Label className='f_Label' style={{color: `${submitColor}`}}>{submitMessage}</Form.Label>    
+      &nbsp;&nbsp;&nbsp;&nbsp;<Form.Label className='f_Label' style={{color: `#fff`, background:`${submitBackground}`}}>{submitMessage}</Form.Label>    
   </Form>
 </Fragment>
   )
