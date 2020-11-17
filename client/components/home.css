@@ -1,5 +1,6 @@
 body {
-  height: 100% !important;
+  /* height: 100% !important; */
+
   /* background: url('../../public/passport.jpg')  no-repeat center center fixed !important;
   -webkit-background-size: cover !important; */
   /* -moz-background-size: cover !important; */
@@ -28,7 +29,11 @@ body {
 /* .navbar-brand {
   z-index: 2 !important;
 } */
-@media (min-width: 992px) {
+
+.cool_logo {
+  height: 100px;
+  width: 100px;
+}
 
 
 .mr-auto {
@@ -71,7 +76,7 @@ body {
 } */
 
 .mr-auto {
-  width: 100% !important;
+  /* width: 100% !important; */
   display: flex !important;
   text-align: center !important;
   padding-left: 5%;
@@ -79,7 +84,7 @@ body {
 
 .navbar {
   background: #DCDCDC !important;
-  width: 100% !important;
+  /* width: 100% !important; */
   z-index: 1 !important;
   padding: 1rem 1rem !important;
   /* line-height: 1.5 !important; */
@@ -138,12 +143,326 @@ body {
   text-decoration: underline !important;
 } 
 
+/*                  MOBILE BEGINS HERE                                   */
+
+._botNav {
+  font-size: 11px;
+  /* top: 20% !important; */
+}
+
+.about-me {
+  /* display: flex; */
+  position: absolute;
+  top: 21% !important;
+  left: .5%;
+  width: 99%;
+  /* height: 199%; */
+  /* height: 900px; */
+  height: 120%;
+  background: hsl(215, 44%, 34%); 
+  z-index: -1;
+  /* left: 6%;
+  top: 26%;
+  
+  transform: translate(-4%, -20%); */
+}
+
+.who {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  width: 98%;
+  height: 276px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow: auto;
+  border: .2vw solid white;
+}
+
+.who-title {
+  /* display: flex; */
+  top: -2px;
+  text-decoration: underline;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 160%;
+}
+
+.who-p {
+  /* display: flex; */
+  position: absolute;
+  color: white;
+  top: 40px;
+  margin: .5%;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
+}
+
+.what-table {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  left: 1%;
+  top: 300px;
+  width: 98%;
+  height: 296px;
+  border: .2vw solid white;
+  overflow: auto;
+
+}
+
+.what-title {
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  height: 30px;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+}
+
+.what-p {
+  position: absolute;
+  color: white;
+  top: 40px;
+  margin: .5%;
+  font-size: 14px;
+}
+
+.what-done {
+  /* display: flex; */
+  flex: 1;
+  position: absolute;
+  left: 1%;
+  top: 610px;
+  width: 98%;
+  height: 276px;
+  border: .2vw solid white;
+  overflow: auto;
+
+}
+
+.d-title {
+  position: absolute;
+  text-decoration: underline;
+  top: -2px;
+  width: 100%;
+  height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 160%;
+}
+
+.d-p {
+  position: absolute;
+  color: white;
+  top: 40px;
+  margin: .5%;
+  font-size: 14px;
+}
+
+
+/* .passport_gavel {
+  position: absolute;
+  left: .5%;
+  top: 116%;
+  width: 99%;
+  height: 112.9%;
+} */
+
+.home-clients {
+  position: absolute;
+  /* top: 1140px; */
+  top: 146%;
+  left: .5%;
+  width: 99%;
+  height: 96%;
+  background: hsl(0, 0%, 93%) !important;
+  z-index: -1;
+}
+
+.home-client-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 3.2%;
+  
+}
+
+.cool_logo {
+  width: 30%;
+  height: 40%;
+}
+
+.submit_div {
+  position: absolute;
+  /* top: 2000px; */
+  top: 247%;
+  left: .5%;
+  background: lightblue;
+  width: 99%;
+  /* height: 800px; */
+  height: 105%;
+  overflow: auto;
+}
+
+.user_form {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+#message {
+  width: 330% !important;
+  /* height: 110%; */
+}
+
+.text-muted {
+  top: 14px;
+}
+
+
+
+.zip-container{
+  position: absolute;
+  left: 1%;
+  top: 21%;
+  width: 22%;
+  height: 20%;
+}
+
+.ja-container{
+  position: absolute;
+  left: 26%;
+  top: 21%;
+  width: 22%;
+  height: 20%;
+}
+
+.jin-container{
+  position: absolute;
+  left: 50%;
+  top: 21%;
+  width: 22%;
+  height: 20%;
+}
+
+.semantic-container{
+  position: absolute;
+  left: 74%;
+  top: 21%;
+  width: 22%;
+  height: 20%;
+}
+
+.talkbox-container{
+  
+}
+
+.h1-container{
+  
+}
+
+.bms-container{
+  
+}
+
+.equities-container{
+  
+}
+
+.map-section {
+  position: absolute;
+  /* top: 3380px; */
+  top: 357%;
+  left: .5%;
+  background: hsl(120, 25%, 85%);
+  width: 99%;
+  height: 66%;
+  /* display: flex;
+  justify-items: center;
+  align-items: center; */
+  /* display: flex;
+  align-content: center;
+  align-items: center;
+  margin: auto; */
+}
+
+.GMap_Copy {
+  position: absolute;
+  background: lightyellow;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 93%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo {
+  position: absolute;
+  /* top: 4000px; */
+  top: 428%;
+  background: hsl(215, 44%, 20%); 
+  width: 100%;
+  height: 16%;
+}
+
+._contact1 {
+  position: absolute;
+  top: 6%;
+  height: 32%;
+  width: 100%;
+  /* background: lightsalmon; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: white;
+  font-size: 140%;
+  font-weight: bold;
+  /* letter-spacing: 2px; */
+  letter-spacing: 2.2px;
+  font-size: 170%;
+}
+
+._contact2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 48%;
+  /* background: lightpink; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  color: white;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+/* should be max-width and make section divs (like blue about section) position relative,
+so you can break them up by <br> and guarantee they wont touch each other*/
+@media (max-width: 992px) {
+  ._botNav {
+    font-size: 120%;
+  }
 
 /*                                ABOUT US SECTION                   */
 .about-me {
   display: flex;
   position: absolute;
-  top: 46%;
+  top: 23%;
   left: .5%;
   width: 99%;
   height: 69%;
@@ -217,7 +536,7 @@ body {
   height: 10%;
   color: white;
   text-align: center;
-  font-size: 160%;
+  font-size: 20px;
 }
 
 .what-p {
@@ -272,7 +591,7 @@ body {
 
 .home-clients {
   position: absolute;
-  top: 230%;
+  top: 740px;
   left: .5%;
   width: 99%;
   height: 96%;

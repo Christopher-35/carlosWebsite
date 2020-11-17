@@ -1,5 +1,7 @@
 @media (min-width: 992px) {
-
+  ._botNav {
+    font-size: 120%;
+  }
 }
 
 body {

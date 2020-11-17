@@ -28,6 +28,10 @@ body {
 }
 @media (min-width: 992px) {
 
+  ._botNav {
+    font-size: 120%;
+  }
+
 .f_half {
   width: 99vw;
   height: 100vh;

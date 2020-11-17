@@ -79,7 +79,7 @@ const scrollToTop = () => window.scrollTo(0, 0);
       <div className='_hbackground'>
       {/* {console.log('state', langs)} */}
 
-           <div id="scroll-home" className='about-me'>
+      <div className='about-me'>
        <div className='who'>
          <p className='who-title'>{langs.introTitles[0]}</p>
          <p className='who-p'>{langs.introParagraphs[0]}</p>

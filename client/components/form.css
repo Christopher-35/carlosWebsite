@@ -1,7 +1,27 @@
+#message {
+  height: 120%;
+}
+
 .text-muted {
   font-weight: bold;
 }
 
 .f_Label {
   font-weight: bold;
+}
+
+.btn {
+  position: absolute;
+  top: 650px;
+  white-space: normal;
+}
+
+.f_Label {
+  position: absolute !important;
+  top: 648px !important;
+  left: 105px;
+  z-index: 1 !important;
+  display: inline;
+  width: 280px;
+
 }

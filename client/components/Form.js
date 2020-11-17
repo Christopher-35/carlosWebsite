@@ -9,6 +9,7 @@ import { set } from 'date-fns';
 import './form.css';
 import axios from 'axios';
 
+
 const SubmitForm = ( { formData, formMute} ) => {
 
   const [fullNameInput, setFullNameInput] = useState("");
@@ -215,7 +216,7 @@ const SubmitForm = ( { formData, formMute} ) => {
   const onSubmitForm = async ( e ) => {
     e.preventDefault();
     console.log('validity=', isValidated)
-    try {
+    // try {
       // e.currentTarget.checkValidity();
       if (!isValidated){
         setSubmitBackground(`#dc3545`)
@@ -239,15 +240,77 @@ const SubmitForm = ( { formData, formMute} ) => {
       //   headers: {"Content-Type": "application/json"},
       //   body: JSON.stringify(body)
       // });
+      // console.log('UPDATED BDAY', 'Name: ' + body.fullname + '\n' + "Email: " + body.email + '\n' + "Phone Number: " + body.phonenumber + '\n' + "Message: " + body.message)
+      const txt = 'Name:  ' + body.fullname + '\n' + "Email:  " + body.email + '\n' + "Phone Number:  " + body.phonenumber + '\n' + "Message:  " + body.message;
+      // console.log('encodethis', btao('encode'))
+      
+      // const security = 'RobackChristopher@gmail.com 1F722ADE-9833-EF12-2E4B-12041EB3B2B8';
 
-      const response = await axios.post("http://localhost:5000", body);
-      console.log('response', response);
-    
+      //Um9iYWNrQ2hyaXN0b3BoZXJAZ21haWwuY29tOjFGNzIyQURFLTk4MzMtRUYxMi0yRTRCLTEyMDQxRUIzQjJCOA==
+      console.log('tLength', txt.length);
+      const updateDatabase = () => {
+        return axios.post("http://localhost:5000", body);
       }
-    } catch (err) {
-      console.error(err.message);
-      console.error('might not meet the name requirements');
+
+      const sendText = () => {
+        return axios({
+          url: 'https://rest.clicksend.com/v3/sms/send',
+          method: 'post',
+          headers: {
+            'Content-Type': 'application/json', 
+            'Authorization': `Basic ${process.env.User_API}`
+          },
+          data: JSON.stringify({"messages":[{"body": txt,"to": "+61411111111"}]})
+        });
+      }
+
+      Promise.all([updateDatabase(), sendText()])
+      .then ( function (results)  {
+        const db = results[0];
+        const text = results[1];
+      })
+      .catch(function (err) {
+        console.log(err);
+      })
+
     }
+      // const text = await axios({
+      //   url: 'https://rest.clicksend.com/v3/sms/send',
+      //   method: 'post',
+      //   headers: {
+      //     'Content-Type': 'application/json', 
+      //     'Authorization': `Basic ${process.env.User_API}`
+      //   },
+      //   data: JSON.stringify({"messages":[{"body": "post i","to": "+61411111111"}]})
+      // });
+      // console.log('textMsg=', text);
+      // const response = await axios.post("http://localhost:5000", body);
+      // console.log('response', response);
+
+      // var data = JSON.stringify({"messages":[{"body":"with process.env","to":"+61411111111"}]});
+      // console.log('userapi=', process.env.User_API);
+      // var config = {
+      // method: 'post',
+      // url: 'https://rest.clicksend.com/v3/sms/send',
+      // headers: {
+      // 'Content-Type': 'application/json',
+      // 'Authorization': `Basic ${process.env.User_API}`
+      // },
+      // data : data
+      // };
+
+      // axios(config)
+      // .then(function (response) {
+      // console.log(JSON.stringify(response.data));
+      // })
+      // .catch(function (error) {
+      // console.log(error);
+      // });
+    
+    // } catch (err) {
+    //   console.error(err.message);
+    //   console.error('might not meet the name requirements');
+    // }
   }
 
   return (

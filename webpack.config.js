@@ -63,7 +63,8 @@ module.exports = env => {
 
     plugins: [
         new webpack.DefinePlugin({
-            'process.env.REACT_APP_GOOGLE_KEY': JSON.stringify(process.env.REACT_APP_GOOGLE_KEY || 'development')
+            'process.env.REACT_APP_GOOGLE_KEY': JSON.stringify(process.env.REACT_APP_GOOGLE_KEY || 'development'),
+            'process.env.User_API': JSON.stringify(process.env.User_API || 'development')
         }),
     ]
 
