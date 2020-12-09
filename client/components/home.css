@@ -453,6 +453,7 @@ body {
 
 /* should be max-width and make section divs (like blue about section) position relative,
 so you can break them up by <br> and guarantee they wont touch each other*/
+
 @media (max-width: 992px) {
   ._botNav {
     font-size: 120%;
@@ -752,6 +753,12 @@ so you can break them up by <br> and guarantee they wont touch each other*/
 
 }
 
+@media (max-width: 510px) {
+  ._botNav {
+    font-size: 70%;
+    line-height: 1.3;
+  }
+}
 
 /* .info1 {
   color: white;

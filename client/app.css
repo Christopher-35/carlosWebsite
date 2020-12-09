@@ -58,10 +58,11 @@ body {
 
 ._botNav {
   z-index: 1 !important;
+  line-height: 1.1;
   font-size: 120%;
   top: 14%;
   width: 100%;
-  height: 6%;
+  height: 7%;
   position: fixed;
   display: flex;
   align-items: center;

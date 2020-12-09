@@ -30,7 +30,7 @@ import PracticeAreas from './components/PracticeAreas';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import mapComponent from './gMaps';
 
-//Tell carlos to manipulate database data so querying is easier    LOOK INTO XSS
+//work on media queries
 class App extends Component {
     constructor(props) {
         super(props);
