@@ -493,7 +493,6 @@ so you can break them up by <br> and guarantee they wont touch each other*/
 
 .who-title {
   /* display: flex; */
-
   position: absolute;
   top: 4%;
   width: 100%;
@@ -615,7 +614,7 @@ so you can break them up by <br> and guarantee they wont touch each other*/
 
 .submit_div {
   position: absolute;
-  top: 328%;
+  top: 228%;
   left: .5%;
   background: lightblue;
   width: 99%;
@@ -751,6 +750,26 @@ so you can break them up by <br> and guarantee they wont touch each other*/
   font-weight: bold;
 }
 
+}
+
+@media (max-width: 751px) {
+  /* .who-title {
+    font-size: 80%;
+  } */
+  .d-title {
+    /* font-size: 130%; */
+    font-size: 90%;
+
+  }
+}
+
+@media (max-width: 590px) {
+  .who-title {
+    font-size: 120%;
+  }
+  .what-title {
+    font-size: 90%;
+  }
 }
 
 @media (max-width: 510px) {

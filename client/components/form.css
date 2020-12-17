@@ -18,10 +18,35 @@
 
 .f_Label {
   position: absolute !important;
-  top: 648px !important;
-  left: 105px;
+  top: 656px;
+  left: 95px;
   z-index: 1 !important;
   display: inline;
   width: 280px;
 
+}
+
+/* .message-mute {
+  min-width: 400px;
+} */
+
+@media (max-width: 430px) {
+  .submit_div {
+    min-height: 750px;
+  }
+
+  .s-button {
+    top: 690px;
+  }
+
+  .f_Label {
+    top: 690px;
+  }
+  
+}
+
+@media (max-width: 304px) {
+  .message-mute {
+    min-width: 450px;
+  }
 }

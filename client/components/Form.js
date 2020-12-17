@@ -382,13 +382,12 @@ const SubmitForm = ( { formData, formMute} ) => {
         style={{border: `${langs.border[messageStatus]}`, background: `${langs.background[messageStatus]}`}}
         required/>
         {/* <Form.Label /> */}
-        <Form.Text className="text-muted">{formMute[messageMIndex]}</Form.Text>
+        <Form.Text className="text-muted message-mute">{formMute[messageMIndex]}</Form.Text>
         </Col>
         </Form.Row>
-
       </Form.Group>
       
-      <Button disabled={disableAllButtons} variant="success" type="submit">{formData[20]}</Button> 
+      <Button disabled={disableAllButtons} variant="success" type="submit" className='s-button'>{formData[20]}</Button> 
       &nbsp;&nbsp;&nbsp;&nbsp;<Form.Label className='f_Label' style={{color: `#fff`, background:`${submitBackground}`}}>{submitMessage}</Form.Label>    
   </Form>
 </Fragment>
